@@ -1,6 +1,6 @@
 # Enterprise_Assignment1
 
-# This is the Enterprise Development First Assignment
+# This is the Enterprise Development 1st Assignment
 
 A front-end coding assignment
 
