@@ -3,11 +3,14 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 300;
     background-color: whitesmoke;
+    width: 100%;
 }
 
+/* navigation bar */
 header{
     background-color: white;
-	box-shadow: 0 4px 6px -6px black;
+    box-shadow: 0 4px 12px -6px black;
+    width: 100%;
 }
 
 header::after{
@@ -26,12 +29,10 @@ header::after{
     margin-left: 0;
     padding-top: 3px;
     width: 6%;
-
 }
 
 nav{
     float: 200px;
-    position: fixed;
 }
 
 nav ul{
@@ -42,8 +43,8 @@ nav ul{
 
 nav li{
     display: inline-block;
-    margin-left: 150px;
-    padding-top: 30px;
+    margin-left: 120px;
+    padding-top: 20px;
     position: relative;
 }
 
@@ -75,7 +76,209 @@ nav a:hover::before{
     width: 100%;
 }
 
-.active{
+.navActive{
     color: rgb(219, 78, 13);
     text-decoration: underline;
 }
+
+/* slideshow */
+.slideshow-container{
+    margin: auto;
+    position: relative;
+    max-width: 100%;
+    display: block;
+}
+
+.slide-img{
+    width:1366px;
+    height: 550px;
+    filter: brightness(70%);
+}
+
+.slides{
+    display: none;
+}
+
+.prev-nextBar{
+    position: absolute;
+    bottom: 60px;
+    left: 50px;
+    height: 8%;
+}
+.prev,.next{
+    cursor: pointer;
+    width: 22px;
+    padding: 18px;
+    color: white;
+    font-weight: lighter;
+    font-size: 20px;
+    transition: 0.5s linear;
+    user-select: none;
+    border: 1px solid snow;
+    border-radius: 3px;
+}
+
+.next{
+    margin-left: -4px;
+}
+
+.prev:hover,.next:hover{
+    height: auto;
+    background-color: rgb(236, 81, 25);
+}
+
+.group-dot{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+}
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin-left: 3px;
+    background-color: rgba(128, 128, 128, 0.849);
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+    top: 80%;
+}
+
+.slideActive{
+    display: block;
+}
+
+.dot:hover,.dotActive{
+    background-color: rgb(236, 81, 25);
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.messageBox{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 930px;
+    background-color: rgba(0, 0, 0, 0.418);
+    top: 80px;
+    border-radius: 10px;
+}
+
+.verticalMove{
+    font-size: 15px;
+    padding: 8px;
+    width: 100%;
+    -webkit-animation-name: verticalMove;
+    -webkit-animation-duration: 1.5s;
+    animation-name: verticalMove;
+    animation-duration: 1.5s;
+    position: absolute;
+}
+
+@-webkit-keyframes verticalMove{
+    from{transform: translateY(30%);}
+    to{transform: translateY(0%);}
+}
+
+@keyframes verticalMove{
+    from{transform: translateY(30%);}
+    to{transform: translateY(0%);}
+}
+
+
+.slideCaption{
+    color: snow;
+    font-size: 3.25rem;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.signUpBtn{
+    display:inline-block;
+    padding: 0.46em 1.6em;
+    border: 0.1em solid white;
+    margin:0 0.2em 0.2em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    color:#FFFFFF;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    background-color:rgba(0, 0, 0, 0);
+    transition: all 0.15s;
+    width: 30%;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 350px;
+    left: 140px;
+}
+
+.signUpBtn:hover{
+    text-shadow: 0 0 2em rgba(255,255,255,1);
+    color: white;
+    border: 0.1em solid white;
+    background-color: rgba(214, 68, 15, 0.76);
+}
+
+/* sign up form */
+
+.form-container{
+    background-color: green;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.stageTittleBox{
+    background-color: hotpink;
+    width: 500px;
+    margin: 0 30%;
+}
+
+li{
+    display: inline-block;
+    padding-top: 20px;
+    margin-left: 30px;
+}
+
+.stageBtn{
+    border-radius: 10%;
+    background-color: orangered;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    display:inline-block;
+    border: 0.1em solid white;
+    width: 78px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
