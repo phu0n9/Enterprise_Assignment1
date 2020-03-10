@@ -373,6 +373,10 @@ b{
     display: none;
 }
 
+.form-section:first-of-type{
+    display: inline;
+}
+
 .radioBox{
     margin-left: 70%;
     text-transform: uppercase;

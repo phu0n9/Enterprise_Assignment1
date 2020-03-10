@@ -54,8 +54,10 @@ function carousel() {
 }
 
 //Form validation
+//TODO: fix the form validation logic
+var flag = 0;
 function checkPassword(){
-    if((document.getElementById('psw').value == document.getElementById('repsw').value)){
+    if((document.forms["myForm"]["psw"].value == document.forms["myForm"]["repsw"].value)){
         document.getElementById("repsw").setCustomValidity('');
         flag = 1;
     }
@@ -64,6 +66,7 @@ function checkPassword(){
         flag = 0;
     }
  }
+
 
  function validateEmail(){
  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -90,14 +93,15 @@ function checkPassword(){
  }
 
  function nextBtn(){
-    document.getElementsByClassName('form-section')[0].style.display = 'inline';
     if(flag == 1){
         document.getElementsByClassName('form-section')[0].style.display = 'block';
         document.getElementsByClassName('form-section')[1].style.display = 'none';
         document.getElementById('stageBtn')[0].style.color = 'rgb(29, 146, 29)';
+        return true;
     }
     else{
         alert('Check your input again.');
+        return false;
     }
  }
 
