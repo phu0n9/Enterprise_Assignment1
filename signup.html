@@ -30,11 +30,64 @@
         <section>
             <div class="form-container">
                     <div class="stageTittleBox">
-                        <li><button type="button" class="stageBtn">Account setup</button></li>
-                        <li><button type="button" class="stageBtn">Social profiles</button></li>
-                        <li><button type="button" class="stageBtn">personal details</button></li>
+                        <li>
+                            <button type="button" class="stageBtn">1</button>
+                           <p>Account setup</p> </li>
+                        <li>
+                            <button type="button" class="stageBtn">2</button>
+                            <p>Social profiles</p>
+                        </li>
+                        <li>
+                            <button type="button" class="stageBtn">3</button>
+                            <p>personal details</p>
+                        </li>
+                        
                     </div>
-                <div class="form-box"></div>
+                <div class="form-box">
+                    <div class="form-tittle">create your account</div>
+                    <div class="form-instruction">This is step 1</div>
+                        <form action="/action_page.php" class="form-section" id="account-setup" onsubmit="return nextBtn()">
+                            <!--Username-->
+                            <input type="text" placeholder="Enter Username" id="uname" name="uname" required class="form-control"> 
+                            <!--Password-->
+                            <input type="password" placeholder="Enter Password" name="psw" id="psw" required class="form-control" onchange="return checkPassword()">
+                            <!--Re-enter password-->
+                            <input type="password" name="repsw" id="repsw" placeholder="Confirm Password" required  id="repsw" class="form-control" onkeyup="return checkPassword()">
+                       </form>
+                       
+                       <form action="/action_page.php" class="form-section" id="social-profiles">
+                           <!--Email-->
+                           <input type="text" name="email" id="email" class="form-control" required placeholder="Enter email" onchange="return validateEmail()"><br> 
+                           <!--Phone number-->
+                           <input type="tel" name="phone" id="phone" class="form-control" required placeholder="Enter phone number" onchange="return phonenumber()"><br> 
+                       </form>
+   
+                       <form action="/action_page.php" class="form-section" id="personal-details">
+                           <!--First name-->
+                           <input type="text" name="firstName" id="firstName" placeholder="First Name" class="form-control" required><br>
+                           <!--Last name-->
+                           <input type="text" placeholder="Last Name" class="form-control" name="lastName" id="lastName" required><br>
+                           <!--Birthday-->
+                           <input type="date" name="bday" id="bday" required class="form-control" required><br> 
+                           <!--Gender-->
+                           <label for="gender"><b>Gender:</b></label>
+                           <select name="gender" id="gender" class="form-control">
+                               <option value="default">[please choose]</option>
+                               <option value="female">Female</option>
+                               <option value="male">Male</option>
+                               <option value="unknown">Prefer not to say</option>
+                           </select>
+                           <!--Shoot film-->
+                           <label for="shootFilm"><b id="shootFilm">Have you ever shoot film before?</b>
+                               <div class="radioBox">
+                                   <input type="radio" name="shootFilm" id="yes" value="yes">Yes
+                                   <input type="radio" name="shootFilm" id="no" value="no">No
+                               </div>
+                           </label>
+                       </form>
+
+                    <button type="submit" value="submit" id="submitFormBtn" class="submitFormBtn" onclick="return nextBtn()">next</button>
+                </div>
             </div>
         </section>
 

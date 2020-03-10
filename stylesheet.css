@@ -241,37 +241,147 @@ nav a:hover::before{
 /* sign up form */
 
 .form-container{
-    background-color: green;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 585px;
     display: block;
+    margin: 0;
+    background-image: url(https://i.pinimg.com/originals/ce/ff/d4/ceffd4a32ae297ea637cb6bdb51ddc10.png);
 }
 
 .stageTittleBox{
-    background-color: hotpink;
     width: 500px;
-    margin: 0 30%;
+    margin: 10px 30%;
+    position: absolute;
 }
 
 li{
     display: inline-block;
-    padding-top: 20px;
-    margin-left: 30px;
+    margin-left: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
 }
 
 .stageBtn{
     border-radius: 10%;
-    background-color: orangered;
+    background-color: rgb(236, 81, 25);
     color: white;
     text-transform: uppercase;
     font-weight: bold;
     display:inline-block;
     border: 0.1em solid white;
-    width: 78px;
-    height: 40px;
+    height: 30px; 
 }
 
+.stageBtn:hover{
+    background-color: rgb(175, 61, 185);
+}
+
+.form-box{
+    background-color: rgba(0, 0, 0, 0.418);
+    width: 450px;
+    height: 480px;
+    margin: 90px 31.5%;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.form-tittle{
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+    font-size: x-large;
+    margin: 10px;
+}
+
+.form-instruction{
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+    font-size: medium;
+    margin: 10px;
+}
+
+.form-control{
+    padding:8px;
+    display:block;
+    border:1px solid #ccc;
+    height: 10%;
+    width:50%;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px -5px black;
+    margin: 10px 100px;
+}
+
+.form-control:focus{
+    border-color:#66afe9;
+    outline:0;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+
+#gender{
+    height: 15%;
+    width:54%;
+}
+
+b{
+    text-transform: uppercase;
+    position: absolute;
+    margin: 16px 20px;
+    color: white;
+}
+
+.submitFormBtn{
+    top: 420px;
+    left: 150px;
+    text-align: center;
+    position: absolute;
+    text-transform: uppercase;
+    display:inline-block;
+    padding: 0.46em 1.6em;
+    border: 0.1em solid white;
+    margin:0 0.2em 0.2em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    color:#FFFFFF;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    background-color:rgba(0, 0, 0, 0);
+    transition: all 0.15s;
+    width: 30%;
+    height: 40px;
+    font-weight: bold;
+}
+
+.submitFormBtn:hover{
+    text-shadow: 0 0 2em rgba(255,255,255,1);
+    color: white;
+    border: 0.1em solid white;
+    background-color: rgba(214, 68, 15, 0.76);
+}
+
+.form-section{
+    width: 500px;
+    height: 250px;
+    margin: 0;
+    position: absolute;
+    font-size: large;
+    font-weight: 100px;
+    display: none;
+}
+
+.radioBox{
+    margin-left: 70%;
+    text-transform: uppercase;
+    color: white;
+}
+
+input[type = "radio"]{
+    margin: 15px 10px;
+}
 
 
 

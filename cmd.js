@@ -1,8 +1,8 @@
 // Navigation bar
 function clickableNavBar(stringID){
-    for(var i = 0;i <document.getElementsByTagName('a').length;i++){
-        document.getElementsByTagName('a')[i].style.color = 'black';
-        document.getElementsByTagName('a')[i].style.textDecoration = 'none';
+    for(var i = 0;i <document.getElementsByClassName('navSection').length;i++){
+        document.getElementsByClassName('navSection')[i].style.color = 'black';
+        document.getElementsByClassName('navSection')[i].style.textDecoration = 'none';
     }
     document.getElementById(stringID).style.color = 'rgb(219, 78, 13)';
     document.getElementById(stringID).style.textDecoration = 'underline';
@@ -52,6 +52,88 @@ function carousel() {
     dots[slideIndex-1].className += " dotActive"; 
     setTimeout(carousel, 7000); // Change image every 10 seconds
 }
+
+//Form validation
+function checkPassword(){
+    if((document.getElementById('psw').value == document.getElementById('repsw').value)){
+        document.getElementById("repsw").setCustomValidity('');
+        flag = 1;
+    }
+    else{
+        document.getElementById("repsw").setCustomValidity("Passwords don't match");
+        flag = 0;
+    }
+ }
+
+ function validateEmail(){
+ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+     if(document.getElementById("email").value.match(mailformat)) {
+         document.getElementById("email").setCustomValidity('');
+         flag = 1;
+     }
+     else{
+         document.getElementById("email").setCustomValidity("You have entered an invalid email address!");
+         flag = 0;
+     }
+ }
+
+ function phonenumber(){
+     var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+     if((document.getElementById('phone').value.match(phoneno))){
+         document.getElementById("phone").setCustomValidity('');
+         flag = 1;
+     }
+     else{
+         document.getElementById("phone").setCustomValidity("Your phone input is incorrect!");
+         flag = 0;
+     }   
+ }
+
+ function nextBtn(){
+    document.getElementsByClassName('form-section')[0].style.display = 'inline';
+    if(flag == 1){
+        document.getElementsByClassName('form-section')[0].style.display = 'block';
+        document.getElementsByClassName('form-section')[1].style.display = 'none';
+        document.getElementById('stageBtn')[0].style.color = 'rgb(29, 146, 29)';
+    }
+    else{
+        alert('Check your input again.');
+    }
+ }
+
+
+//  function formValidate(){
+//     if(flag == 1){
+//         location.reload();
+//         return true;
+//     }
+//     else{
+//         alert('Form did not created successfully.');
+//         return false;
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Geolocation
 var x = document.getElementById("map");
