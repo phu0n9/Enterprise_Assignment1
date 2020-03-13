@@ -54,16 +54,16 @@ function carousel() {
 }
 
 //Form validation
-//TODO: fix the form validation logic
+// TODO:sticky navigation bar + form validation +smooth scroll
 var flag = 0;
 function checkPassword(){
-    if((document.forms["myForm"]["psw"].value == document.forms["myForm"]["repsw"].value)){
+    if((document.getElementById("psw").value == document.getElementById("repsw").value)){
         document.getElementById("repsw").setCustomValidity('');
-        flag = 1;
+        // flag = 1;
     }
     else{
         document.getElementById("repsw").setCustomValidity("Passwords don't match");
-        flag = 0;
+        // flag = 0;
     }
  }
 
@@ -93,9 +93,9 @@ function checkPassword(){
  }
 
  function nextBtn(){
-    if(flag == 1){
-        document.getElementsByClassName('form-section')[0].style.display = 'block';
-        document.getElementsByClassName('form-section')[1].style.display = 'none';
+    if(checkPassword() && myForm.uname.value != ""){
+        document.getElementsByClassName('form-section')[1].style.display = 'block';
+        document.getElementsByClassName('form-section')[0].style.display = 'none';
         document.getElementById('stageBtn')[0].style.color = 'rgb(29, 146, 29)';
         return true;
     }

@@ -6,11 +6,18 @@ body{
     width: 100%;
 }
 
+/* @media (max-width: 600px) {
+    nav, section {
+      width: 100%;
+      height: auto;
+    }
+  } */
+
 /* navigation bar */
 header{
     background-color: white;
     box-shadow: 0 4px 12px -6px black;
-    width: 100%;
+    width: 100%;    
 }
 
 header::after{
@@ -53,7 +60,6 @@ nav a{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
-
 }
 
 nav a:hover{
@@ -90,8 +96,8 @@ nav a:hover::before{
 }
 
 .slide-img{
-    width:1366px;
-    height: 550px;
+    width: 100%;
+    height: 600px;
     filter: brightness(70%);
 }
 
@@ -275,7 +281,7 @@ li{
 }
 
 .stageBtn:hover{
-    background-color: rgb(175, 61, 185);
+    background-color: rgb(71, 169, 194);
 }
 
 .form-box{
@@ -387,7 +393,46 @@ input[type = "radio"]{
     margin: 15px 10px;
 }
 
+/* about us  */
+.aboutUs-tittle{
+    text-transform: uppercase;
+    text-align: center;
+    /* border-bottom: 3px solid rgb(236, 81, 25); */
+}
 
+.aboutUs-tittle::after{
+    content: "";  
+    display: block; 
+    margin: 0 auto;
+    width: 5%; 
+    padding-top: 10px; 
+    border-bottom: 3px solid rgb(236, 81, 25); 
+}
+
+.about-us-box{
+    background-color: green;
+    width: 100%;
+    height: 500px;
+}
+
+.personBox{
+    background-color: indigo;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    margin: 20px 73px;
+    display: block;
+    float: left;
+}
+
+.person-image-box{
+    background-color: tomato;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 20px 100px;
+}
 
 
 
