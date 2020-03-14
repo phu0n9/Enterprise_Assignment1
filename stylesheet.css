@@ -2,7 +2,7 @@ body{
     margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 300;
-    background-color: whitesmoke;
+    background-color: white;
     width: 100%;
 }
 
@@ -136,7 +136,7 @@ nav a:hover::before{
 .group-dot{
     position: absolute;
     bottom: 20px;
-    left: 50%;
+    left: 46%;
 }
 
 .dot{
@@ -433,6 +433,35 @@ input[type = "radio"]{
     float: left;
     margin: 20px 100px;
 }
+
+
+/*FIXME: product */
+
+.grid-container{
+    display: none;
+    grid-template-columns: auto auto auto;
+    background-color: white;
+    padding: 0.1px;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    float: right;
+    margin: 0 70px;
+}
+
+.grid-container:first-of-type{
+    display: grid;
+}
+
+.grid-item{
+    background-color: white;
+    border: 0.1px solid rgba(61, 61, 61, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    width: 300px;
+    height: 250px;
+}
+
 
 
 

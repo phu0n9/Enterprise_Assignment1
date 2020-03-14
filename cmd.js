@@ -54,7 +54,7 @@ function carousel() {
 }
 
 //Form validation
-// TODO:sticky navigation bar + form validation +smooth scroll
+//FIXME:sticky navigation bar + form validation +smooth scroll
 var flag = 0;
 function checkPassword(){
     if((document.getElementById("psw").value == document.getElementById("repsw").value)){
@@ -106,18 +106,17 @@ function checkPassword(){
  }
 
 
-//  function formValidate(){
-//     if(flag == 1){
-//         location.reload();
-//         return true;
-//     }
-//     else{
-//         alert('Form did not created successfully.');
-//         return false;
-//     }
-// }
-
-
+//product section
+function clickSection(stringID){
+    if(stringID == 'filmRollSection'){
+        document.getElementsByClassName('grid-container')[0].style.display = "grid";
+        document.getElementsByClassName('grid-container')[1].style.display = "none";
+    }
+    else if(stringID == 'filmCameraSection'){
+        document.getElementsByClassName('grid-container')[0].style.display = "none";
+        document.getElementsByClassName('grid-container')[1].style.display = "grid";
+    }
+}
 
 
 
