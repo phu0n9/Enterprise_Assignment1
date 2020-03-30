@@ -1,0 +1,201 @@
+body{
+    margin: 0;
+    font-weight: 300;
+    background-color: white;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* @media (max-width: 600px) {
+    nav, section {
+      width: 100%;
+      height: auto;
+    }
+  } */
+
+/* navigation bar */
+
+header{
+    background-color: white;
+    box-shadow: 0 4px 12px -6px black;
+    width: 100%; 
+    position: fixed;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    z-index: 400;
+}
+
+header::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo{
+    float: inline-start;
+    margin-left: 0;
+    padding-top: 3px;
+    width: 6%;
+}
+
+nav{
+    float: 200px;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 130px;
+    padding-top: 20px;
+    position: relative;
+}
+
+nav a{
+    color: rgba(3, 2, 2, 0.774);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+nav a:hover{
+    color: sandybrown;
+    text-decoration: underline;
+}
+
+nav a::before{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: sandybrown;
+    position: absolute;
+    top: 0;
+    width: 0%;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+.navActive{
+    color: sandybrown;
+    text-decoration: underline;
+}
+/*FIXME: hover and click in the product section*/
+
+.product-hover{
+    background-color: rgba(255, 255, 255, 0.822);
+    position: absolute;
+    border: 1px solid grey;
+    margin: 30px -36px;
+    width: 150px;
+    height: 60px;
+    display: none;
+    -webkit-animation-name: product-hover;
+    -webkit-animation-duration: 1.5s;
+    animation-name: product-hover;
+    animation-duration: 1.5s;
+}
+
+.product-item-tittle{
+    font-size: 15px;
+    text-align: center;
+}
+
+.product-item-tittle:hover::before{
+    width: 0%;
+}
+
+ul li:hover ul.product-hover {
+    display: block;
+}
+
+@-webkit-keyframes product-hover{
+    from {opacity: .4;}
+    to {opacity: 1}
+}
+
+@keyframes product-hover{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/*FIXME: blog */
+
+.blog-container{
+    padding-top: 80px;
+    width: 90%;
+    height: auto;
+    position: fixed;
+    margin-left: 70px;
+}
+
+.blog-tittle{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: lighter;
+    color: rgb(66, 66, 66);
+    font-size: 50px;
+    border-top: 1px solid rgb(116, 116, 116);
+    border-bottom: 1px solid rgb(116, 116, 116);
+}
+
+.blog-sidebar-box{
+    background-color: green;
+    top: 230px;
+    width: 300px;
+    height: 400px;
+    float: right;
+}
+
+.blog-sidebar-tittle{
+    text-transform: uppercase;
+    font-weight: lighter;
+    line-height: 50px;
+}
+
+.sidebar-link{
+    text-decoration: none;
+    line-height: 25px;
+    font-weight: lighter;
+    color: grey;
+}
+
+.sidebar-link:hover{
+    color: coral;
+}
+
+.article-box{
+    background-color: indigo;
+    padding-top: 80px;
+    width: 90%;
+    height: auto;
+    position: absolute;
+    margin-left: 70px;
+}
+
+.article-section-box{
+    background-color: violet;
+    width: 870px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.image-frame{
+    width: 800px;
+}
+
+.blog-section-tittle{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 23px;
+}

@@ -10,18 +10,24 @@
 
     </head>
 
-    <body onload="return action();">
+    <body onload="return actionOnLoad();">
         <!--Navigation bar-->
         <header>
             <div class="container">
-                <a href="homepage.html"><img src="https://simpleicon.com/wp-content/uploads/roll-film.png" alt="logo" class="logo"></a>
+                <span><a href="homepage.html"><img src="https://simpleicon.com/wp-content/uploads/roll-film.png" alt="logo" class="logo"></a></span>
                 <nav>
                     <ul>
-                        <li><a href="homepage.html" id="home" class="navSection navActive" onclick="return clickableNavBar(this.id)">Home</a></li>
-                        <li><a href="#" id="about" class="navSection" onclick="return clickableNavBar(this.id)">About</a></li>
-                        <li><a href="product.html" id="product" class="navSection" onclick="return clickableNavBar(this.id)">Product</a></li>
-                        <li><a href="#" id="blog" class="navSection" onclick="return clickableNavBar(this.id)">Blog</a></li>
-                        <li><a href="#" id="contact" class="navSection" onclick="return clickableNavBar(this.id)">Contact</a></li>
+                        <li><a href="homepage.html" id="home" class="navSection" onclick="return clickableNavBar(this.id)">Home</a></li>
+                        <li><a href="#aboutUs" id="aboutUs" class="navSection" onclick="return clickableNavBar(this.id)">About us</a></li>
+                        <li><a href="#service" id="service" class="navSection" onclick="return clickableNavBar(this.id)">Service</a></li>
+                        <li>
+                            <a href="product-film-camera.html" class="navSection" onclick="return clickableNavBar(this.id)">Product</a>
+                            <ul class="product-hover">
+                                <td><a href="product-film-rolls.html" id="productFilmRoll" class="product-item-tittle">Film Rolls</a></td> <br>
+                                <td><a href="product-film-camera.html" id="productFilmCamera"  class="product-item-tittle">Film Cameras</a></td>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html" id="blog" class="navSection" onclick="return clickableNavBar(this.id)">Blog</a></li>
                     </ul>
                 </nav>
             </div>

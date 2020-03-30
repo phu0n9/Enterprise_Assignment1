@@ -9,8 +9,8 @@ function clickableNavBar(stringID){
 }
 
 //Combine functions
-function action(){
-  carousel();
+function actionOnLoad(){
+    carousel();
   // getLocation();
 }
 
@@ -52,6 +52,20 @@ function carousel() {
     dots[slideIndex-1].className += " dotActive"; 
     setTimeout(carousel, 7000); // Change image every 10 seconds
 }
+
+
+
+//service section movement
+var sectionBox = document.getElementsByClassName("service-section-box");
+var imageBox = document.getElementsByClassName("service-image-box");
+
+function mouseOverServiceSection(n){
+    for(var i = 0;i<imageBox.length;i++){
+            imageBox[i].className = imageBox[i].className.replace(" upAndDown","");
+    }
+    imageBox[n-1].className += " upAndDown";
+}
+
 
 //Form validation
 //FIXME:sticky navigation bar + form validation +smooth scroll
@@ -104,19 +118,6 @@ function checkPassword(){
         return false;
     }
  }
-
-
-//product section
-function clickSection(stringID){
-    if(stringID == 'filmRollSection'){
-        document.getElementsByClassName('grid-container')[0].style.display = "grid";
-        document.getElementsByClassName('grid-container')[1].style.display = "none";
-    }
-    else if(stringID == 'filmCameraSection'){
-        document.getElementsByClassName('grid-container')[0].style.display = "none";
-        document.getElementsByClassName('grid-container')[1].style.display = "grid";
-    }
-}
 
 
 

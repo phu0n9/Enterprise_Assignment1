@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Film Store</title>
+        <link rel="stylesheet" href="product-stylesheet.css">
+        <script type="text/javascript" src="cmd.js"></script>
+        <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/movie-basics/48/v-35-512.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+
+    <body onload="return actionOnLoad();">
+        <!--Navigation bar-->
+        <header>
+            <div class="container">
+                <span><a href="homepage.html"><img src="https://simpleicon.com/wp-content/uploads/roll-film.png" alt="logo" class="logo"></a></span>
+                <nav>
+                    <ul>
+                        <li><a href="homepage.html" id="home" class="navSection" onclick="return clickableNavBar(this.id)">Home</a></li>
+                        <li><a href="#aboutUs" id="aboutUs" class="navSection" onclick="return clickableNavBar(this.id)">About us</a></li>
+                        <li><a href="#service" id="service" class="navSection" onclick="return clickableNavBar(this.id)">Service</a></li>
+                        <li>
+                            <a href="product-film-camera.html" class="navSection navActive" onclick="return clickableNavBar(this.id)">Product</a>
+                            <ul class="product-hover">
+                                <td><a href="product-film-rolls.html" id="productFilmRoll" class="product-item-tittle">Film Rolls</a></td> <br>
+                                <td><a href="product-film-camera.html" id="productFilmCamera"  class="product-item-tittle">Film Cameras</a></td>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html" id="blog" class="navSection" onclick="return clickableNavBar(this.id)">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <span class="product-container">
+            <section class="product-sidebar">
+                <h1 class="product-sidebar-tittle">our products</h1>
+                <a href="product-film-rolls.html"  id="filmRollSection" class="product-sidebar-text">Film Rolls</a> <br>
+                <a href="product-film-camera.html" id="filmCameraSection" class="product-sidebar-text product-sidebar-text-active">Film Cameras</a>
+            </section>
+    
+            <section>
+                <div class="grid-container">
+                    <a href="#" class="grid-item">
+                        <img class="grid-item-image" src="https://static.bhphoto.com/images/images500x500/Holga_144120_144_120_120N_1264096565_369376.jpg" alt="filmcamera1">
+                        <div class="grid-item-text">Holga 120N Medium Format Film Camera</div>
+                        <div class="grid-item-price">930.000đ</div>
+                    </a>
+                    <a href="#" class="grid-item">
+                        <img class="grid-item-image" src="https://s.yimg.com/aah/yhst-2405092478071/minolta-x-700-35mm-camera-with-50mm-lens-student-camera-used-18.png" alt="filmcamera2">
+                        <div class="grid-item-text">Minolta X-700 35mm Camera with 50mm lens</div>
+                        <div class="grid-item-price">3.200.000đ</div>
+                    </a>
+                    <a href="#" class="grid-item">
+                        <img class="grid-item-image" src="https://www.outsidetheshot.com/wp-content/uploads/2019/10/Nikon-FM2.jpg" alt="filmcamera3">
+                        <div class="grid-item-text">Nikon FM2 with 50mm lens f1.8</div>
+                        <div class="grid-item-price">4.800.000đ</div>
+                    </a>
+                    <a href="#" class="grid-item">
+                        <img class="grid-item-image" src="https://www.vnphoto.net/data/p8/1295_ae03_6064.jpg" alt="filmcamera4">
+                        <div class="grid-item-text">Canon AE-1 with 50mm lens f1.5</div>
+                        <div class="grid-item-price">3.500.000đ</div>
+                    </a>
+                    <a href="#" class="grid-item">
+                        <img class="grid-item-image" src="https://sa.nhattao.com/2017/03/7978729_9df09d75bfbf45d50c4992ee99f95cef.jpg" alt="filmcamera5">
+                        <div class="grid-item-text">Nikon L35AF with 35mm lens f2.8</div>
+                        <div class="grid-item-price">1.200.000đ</div>
+                    </a>
+                    <a href="#" class="grid-item">
+                        <img class="grid-item-image" src="https://i.ebayimg.com/images/g/8dUAAOSw6zheUnU4/s-l640.jpg" alt="filmcamera6">
+                        <div class="grid-item-text">Olympus OM10 with lens 28-38mm f4</div>
+                        <div class="grid-item-price">2.200.000đ</div>
+                    </a>
+                    <a href="#" class="grid-item">
+                        <img class="grid-item-image" src="https://assets.fatllama.com/images/medium/medium-format-yashica-mat-124g-film-camera--like-rolleiflex-61603577.jpg" alt="filmcamera7">
+                        <div class="grid-item-text">Yashica Mat 124G</div>
+                        <div class="grid-item-price">8.500.000đ</div>
+                    </a>
+                    <a href="#" class="grid-item">
+                        <img class="grid-item-image" src="https://i.ebayimg.com/images/g/wI4AAOSwLfRbStX9/s-l640.jpg" alt="filmcamera8">
+                        <div class="grid-item-text">Konica C35 35mm Rangefinder Film Camera</div>
+                        <div class="grid-item-price">1.200.000đ</div>
+                    </a>
+                    <a href="#" class="grid-item">
+                        <img class="grid-item-image" src="https://i.ebayimg.com/thumbs/images/g/We4AAOSwgEVefqC1/s-l225.webp" alt="filmcamera9">
+                        <div class="grid-item-text">Mamiya RB67 Pro with Sekor 127mm f3.8</div>
+                        <div class="grid-item-price">12.000.000đ</div>
+                    </a>
+
+                </div>
+            </section>
+        </span>
+
+         <!--Contact-->
+         <footer id="contact">
+            <span class="contact-container">
+                <img class="contact-image" src="https://images.pexels.com/photos/3596194/pexels-photo-3596194.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="contact-image">
+                <div class="contact-group">
+                    <h1 class="inner-body-tittle">our contact</h1>
+                    <span class="contact-section">
+                        <img class="saigon-image" src="saigon.png" alt="hochiminh-icon">
+                        <h1 class="contact-tittle">Ho Chi Minh city</h1>
+                            <div class="contact-text">
+                                <img class="icon-image" src="https://image.flaticon.com/icons/svg/1033/1033925.svg" alt="place">
+                                123 Tran Hung Dao street, Ben Nghe ward,district 1
+                            </div>
+                            <div class="contact-text">
+                                <img class="icon-image" src="https://image.flaticon.com/icons/svg/601/601215.svg" alt="email-image">
+                                filmstore@gmail.com
+                            </div>
+                            <div class="contact-text">
+                                 <img class="icon-image" src="https://image.flaticon.com/icons/svg/679/679397.svg" alt="telephone-image">
+                                +8412 345 6789
+                            </div>
+                    </span>
+
+                    <span class="contact-section">
+                        <img class="saigon-image" src="saigon.png" alt="hanoi-icon">
+                        <h1 class="contact-tittle">Ha Noi city</h1>
+                            <div class="contact-text">
+                                <img class="icon-image" src="https://image.flaticon.com/icons/svg/1033/1033925.svg" alt="place">
+                                123 Tran Hung Dao street, Ben Nghe ward,district 1
+                            </div>
+                            <div class="contact-text">
+                                <img class="icon-image" src="https://image.flaticon.com/icons/svg/601/601215.svg" alt="email-image">
+                                filmstore@gmail.com
+                            </div>
+                            <div class="contact-text">
+                                 <img class="icon-image" src="https://image.flaticon.com/icons/svg/679/679397.svg" alt="telephone-image">
+                                +8412 345 6789
+                            </div>
+                    </span>
+
+                    <span class="contact-section">
+                        <img class="saigon-image" src="saigon.png" alt="dalat-icon">
+                        <h1 class="contact-tittle">Da Lat city</h1>
+                    
+                            <div class="contact-text">
+                                <img class="icon-image" src="https://image.flaticon.com/icons/svg/1033/1033925.svg" alt="place">
+                                123 Tran Hung Dao street, Ben Nghe ward,district 1
+                            </div>
+                            <div class="contact-text">
+                                <img class="icon-image" src="https://image.flaticon.com/icons/svg/601/601215.svg" alt="email-image">
+                                filmstore@gmail.com
+                            </div>
+                            <div class="contact-text">
+                                 <img class="icon-image" src="https://image.flaticon.com/icons/svg/679/679397.svg" alt="telephone-image">
+                                +8412 345 6789
+                            </div>
+                    </span>
+                </div>
+            </span>
+        </footer>
+
+    </body>
+</html>

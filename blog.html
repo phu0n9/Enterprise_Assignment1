@@ -3,30 +3,58 @@
     <head>
         <meta charset="utf-8">
         <title>Film Store</title>
-        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="blog-stylesheet.css">
         <script type="text/javascript" src="cmd.js"></script>
         <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/movie-basics/48/v-35-512.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
 
-    <body onload="return action();">
+    <body onload="return actionOnLoad();">
         <!--Navigation bar-->
         <header>
             <div class="container">
-                <a href="homepage.html"><img src="https://simpleicon.com/wp-content/uploads/roll-film.png" alt="logo" class="logo"></a>
+                <span><a href="homepage.html"><img src="https://simpleicon.com/wp-content/uploads/roll-film.png" alt="logo" class="logo"></a></span>
                 <nav>
                     <ul>
                         <li><a href="homepage.html" id="home" class="navSection" onclick="return clickableNavBar(this.id)">Home</a></li>
-                        <li><a href="#" id="about" class="navSection" onclick="return clickableNavBar(this.id)">About</a></li>
-                        <li><a href="product.html" id="product" class="navSection navActive" onclick="return clickableNavBar(this.id)">Product</a></li>
-                        <li><a href="#" id="blog" class="navSection" onclick="return clickableNavBar(this.id)">Blog</a></li>
-                        <li><a href="#" id="contact" class="navSection" onclick="return clickableNavBar(this.id)">Contact</a></li>
+                        <li><a href="#aboutUs" id="aboutUs" class="navSection" onclick="return clickableNavBar(this.id)">About us</a></li>
+                        <li><a href="#service" id="service" class="navSection" onclick="return clickableNavBar(this.id)">Service</a></li>
+                        <li>
+                            <a href="product-film-rolls.html" class="navSection" onclick="return clickableNavBar(this.id)">Product</a>
+                            <ul class="product-hover">
+                                <td><a href="product-film-rolls.html" id="productFilmRoll" class="product-item-tittle">Film Rolls</a></td> <br>
+                                <td><a href="product-film-camera.html" id="productFilmCamera"  class="product-item-tittle">Film Cameras</a></td>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html" id="blog" class="navSection navActive" onclick="return clickableNavBar(this.id)">Blog</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         
+        <article class="blog-container">
+            <h1 class="blog-tittle">Blog</h1>
+            <span class="article-box">
+                <aside class="blog-sidebar-box">
+                    <h1 class="blog-sidebar-tittle">Suggested posts</h1>
+                    <a href="#" class="sidebar-link">Want to buy a film camera</a>
+                    <h1 class="blog-sidebar-tittle">Monthly posts</h1>
+                    <a href="#" class="sidebar-link">September & October</a><br>
+                    <a href="#" class="sidebar-link">November</a><br>
+                    <a href="#" class="sidebar-link">July & August</a><br>
+                    <a href="#" class="sidebar-link">June</a>
+                </aside>
+                <div class="article-section-box">
+                    <a href="#"><img class="image-frame" src="https://croplab.vn/wp-content/uploads/2019/11/0002_.jpg" alt="img2"></a>
+                    <p class="blog-section-tittle">September & October</p>
+                    <span class="blog-section-text">Hi guys, it has been 2 months since we last met. Saigon is now entering rainy days, one moment it’ll be sunny and the next it’ll start pouring like crazy. If you havent got any certain plan for today, let’s take a seat, have a cup of tea and enjoy</span>
+                    <span class="blog-section-text-highlight">“The best of September n October”.</span><br>
+                    <a href="#" class="read-more-option">read more</a>
+                </div>
+            </span>
+
+        </article>
         
 
         
