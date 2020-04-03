@@ -1,75 +1,97 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <html lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Film Store</title>
         <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="homepage-stylesheet.css">
         <script type="text/javascript" src="cmd.js"></script>
         <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/movie-basics/48/v-35-512.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     </head>
 
-    <body onload="return actionOnLoad();">
-        <!--Navigation bar-->
-        <header>
+    <body onload="return carousel();">
+         <!--Navigation bar-->
+         <header>
             <div class="container">
                 <span><a href="homepage.html"><img src="https://simpleicon.com/wp-content/uploads/roll-film.png" alt="logo" class="logo"></a></span>
                 <nav>
                     <ul>
-                        <li><a href="homepage.html" id="home" class="navSection navActive" onclick="return clickableNavBar(this.id)">Home</a></li>
-                        <li><a href="#aboutUs" id="aboutUs" class="navSection" onclick="return clickableNavBar(this.id)">About us</a></li>
-                        <li><a href="#service" id="service" class="navSection" onclick="return clickableNavBar(this.id)">Service</a></li>
+                        <li><a href="homepage.html" id="home" class="navSection navActive" onclick="return clickableNavBar(1)">Home</a></li>
                         <li>
-                            <a href="product-film-rolls.html" class="navSection" onclick="return clickableNavBar(this.id)">Product</a>
-                            <ul class="product-hover">
-                                <td><a href="product-film-rolls.html" id="productFilmRoll" class="product-item-tittle">Film Rolls</a></td> <br>
-                                <td><a href="product-film-camera.html" id="productFilmCamera"  class="product-item-tittle">Film Cameras</a></td>
+                            <a href="#service" class="navSection" onclick="return clickableNavBar(2)">Service</a>
+                            <img class="drop-down-icon" src="https://image.flaticon.com/icons/svg/60/60995.svg" alt="drop-down-icon">
+                            <ul class="dropdown-hover">
+                                <td><a href="#" class="dropdown-item-tittle">Film Processing</a></td>
+                                <td><a href="#" class="dropdown-item-tittle">Film Scanning</a></td>
+                                <td><a href="#" class="dropdown-item-tittle">Darkroom Processing</a></td>
                             </ul>
                         </li>
-                        <li><a href="blog.html" id="blog" class="navSection" onclick="return clickableNavBar(this.id)">Blog</a></li>
+                        <li>
+                            <a href="product-film-rolls.html" class="navSection" onclick="return clickableNavBar(3)">Product</a>
+                            <img class="drop-down-icon" src="https://image.flaticon.com/icons/svg/60/60995.svg" alt="drop-down-icon">
+                            <ul class="dropdown-hover">
+                                <td><a href="product-film-rolls.html" class="dropdown-item-tittle">Film Rolls</a></td>
+                                <td><a href="product-film-camera.html" class="dropdown-item-tittle">Film Cameras</a></td>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html" class="navSection" onclick="return clickableNavBar(4)">Blog</a></li>
+                        <li><a href="contactUs.html" class="navSection" onclick="return clickableNavBar(5)">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
+        <main>
         <!--Slideshow-->
         <section>
             <div class="slideshow-container">
                 <div class="slides fade slideActive">
                     <img class="slide-img" src="https://vradenburg.net/wp-content/uploads/2017/01/P1220026.jpg" alt="filmphotog1">
-                    <div class="messageBox">
-                        <div class="verticalMove slideCaption">See through the film rolls</div><br>
-                        <span><div><a href="signUp.html"><button class="contactBtn" type="button">Contact us</button></a></div></span>
-                    </div>
+                    <span class="message-box-container">
+                        <div class="messageBox">
+                            <div class="verticalMove slideCaption">See through the film rolls</div><br>
+                            <span><div><a href="contactUs.html"><button class="contactBtn" type="button">Contact us</button></a></div></span>
+                        </div>
+                    </span>
                 </div>
+                
                 <div class="slides fade">
                     <img class="slide-img" src="https://www.photography-tips-and-resources.com/wp-content/uploads/2014/01/1film_photography_tips.jpg" alt="filmphotog2">
-                    <div class="messageBox">
-                        <div class="verticalMove slideCaption">See through the time</div> <br>
-                        <span><div><a href="signUp.html"><button class="contactBtn" type="button">Contact us</button></a></div></span>
-                    </div>           
+                    <span class="message-box-container">
+                        <div class="messageBox">
+                            <div class="verticalMove slideCaption">See through the time</div> <br>
+                            <span><div><a href="contactUs.html"><button class="contactBtn" type="button">Contact us</button></a></div></span>
+                        </div> 
+                    </span>          
                  </div>
                 <div class="slides fade">
                     <img class="slide-img" src="https://wallpapercave.com/wp/wp5555041.jpg" alt="filmphotog3">
-                    <div class="messageBox">
-                        <div class="verticalMove slideCaption">See through the scenary</div> <br>
-                        <span><div><a href="signUp.html"><button class="contactBtn" type="button">Contact us</button></a></div></span>
-                    </div>            
+                    <span class="message-box-container">
+                        <div class="messageBox">
+                            <div class="verticalMove slideCaption">See through the scenary</div> <br>
+                            <span><div><a href="contactUs.html"><button class="contactBtn" type="button">Contact us</button></a></div></span>
+                        </div>   
+                    </span>         
                 </div>
                 <div class="slides fade">
                     <img class="slide-img" src="https://www.itl.cat/pngfile/big/48-486204_vintage-camera-wallpapers-photo-as-wallpaper-hd-camera.jpg" alt="filmphotog4">
-                    <div class="messageBox">
-                        <div class="verticalMove slideCaption">See through the lens</div> <br>
-                        <span><div><a href="signUp.html"><button class="contactBtn" type="button">Contact us</button></a></div></span>
-                    </div>            
+                    <span class="message-box-container">
+                        <div class="messageBox">
+                            <div class="verticalMove slideCaption">See through the lens</div> <br>
+                            <span><div><a href="contactUs.html"><button class="contactBtn" type="button">Contact us</button></a></div></span>
+                        </div>  
+                    </span>          
                 </div>
                 <div class="slides fade">
                     <img class="slide-img" src="https://tutsandreviews.com/wp-content/uploads/2017/10/photo-1995690_1920-min.jpg" alt="filmphotog5">
-                    <div class="messageBox">
-                        <div class="verticalMove slideCaption">See through our gears</div> <br>
-                        <span><div><a href="signUp.html"><button class="contactBtn" type="button">Contact us</button></a></div></span>
-                    </div>            
+                    <span class="message-box-container">
+                        <div class="messageBox">
+                            <div class="verticalMove slideCaption">See through our gears</div> <br>
+                            <span><div><a href="contactUs.html"><button class="contactBtn" type="button">Contact us</button></a></div></span>
+                        </div> 
+                    </span>           
                 </div>
 
                 <!--Moving dots-->
@@ -90,144 +112,95 @@
         </section>
         
         <!--About us-->
-        <section id="aboutUs">
+        <section id="about">
             <h1 class="body-tittle">about us</h1>
         </section>
-
-        <!--Service-->
+       
+         <!--Service-->
         <section id="service">
             <span class="service-box">
                 <img class="service-banner-box" src="https://images.squarespace-cdn.com/content/v1/53a60116e4b0488fb14d69d8/1543599160315-GS7TDPABRY8SNZVPMQVO/ke17ZwdGBToddI8pDm48kPyxK6AB3zgGizbLyl3cQLF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0hHMyhIh2kKzuOL3ydJCryA1F0gmNLmEt4Nikyd91URavr8Aoi-yShiL3L-0iJr14g/Why+I+Started+Shooting+Film+%7C+Living+Minnaly+__4.JPG?format=2500w" alt="service-image"> 
                 <div class="service-group-box">
-                    <h1 class="inner-body-tittle">our service</h1>  
-                    <span class="service-section-box" onmouseover="return mouseOverServiceSection(1)">
+                    <h1 class="inner-body-tittle">our service</h1> 
+                    <a href="#" class="service-section-box" onmouseover="return mouseOverServiceSection(1)">
                         <img src="https://llab.vn/wp-content/uploads/2017/04/ngph_ll-service-3.png" alt="scanFilm" class="service-image-box">
                         <h1 class="service-tittle">film processing</h1>
-                    </span>
-                    <span class="service-section-box" onmouseover="return mouseOverServiceSection(2)">
+                    </a> 
+                    <a href="#" class="service-section-box" onmouseover="return mouseOverServiceSection(2)">
                         <img src="https://llab.vn/wp-content/uploads/2017/04/ngph_ll-service-2.png" alt="printFilm" class="service-image-box">
                         <h1 class="service-tittle">film scanning</h1>
-                    </span>    
-                    <span class="service-section-box" onmouseover="return mouseOverServiceSection(3)">
+                    </a> 
+                    <a href="#" class="service-section-box" onmouseover="return mouseOverServiceSection(3)">
                         <img src="https://llab.vn/wp-content/uploads/2017/04/ngph_ll-service-1.png" alt="darkRoomFilm" class="service-image-box">
                         <h1 class="service-tittle">darkroom processing</h1>
-                    </span>
+                    </a> 
                 </div>
             </span>
         </section>
 
         <!--Blog-->
-        <section id="blog">
-            <span class="blog-group">
-                <h1 class="body-tittle">blog</h1>
-                <span class="blog-section-group">
-                    <span class="blog-section">
-                        <a href="#"><img class="image-frame" src="https://croplab.vn/wp-content/uploads/2019/12/0003_.jpg" alt="img1"></a>
-                        <p class="blog-section-tittle">November</p>
-                        <div class="blog-section-text">Hello everyone, today is the last beautiful Sunday of 2019, you have taken many great photos, haven’t you?</div>
-                        <div class="blog-section-text">Thank you for supporting us all these years.Best wishes to you, happy new year!</div>
-                        <span class="blog-section-text-highlight">“The best of November”.</span>
-                        <a href="#" class="read-more-option">read more</a>
-                    </span>
-                    <span class="blog-section">
-                        <a href="#"><img class="image-frame" src="https://croplab.vn/wp-content/uploads/2019/11/0002_.jpg" alt="img2"></a>
-                        <p class="blog-section-tittle">September & October</p>
-                        <span class="blog-section-text">Hi guys, it has been 2 months since we last met. Saigon is now entering rainy days, one moment it’ll be sunny and the next it’ll start pouring like crazy. If you havent got any certain plan for today, let’s take a seat, have a cup of tea and enjoy</span>
-                        <span class="blog-section-text-highlight">“The best of September n October”.</span><br>
-                        <a href="#" class="read-more-option">read more</a>
-                    </span>
-                    <span class="blog-section">
-                        <a href="#"><img class="image-frame" src="https://croplab.vn/wp-content/uploads/2019/09/0019_19A-e1568970106121.jpg" alt="img3"></a>
-                        <p class="blog-section-tittle">July & August</p>
-                        <span class="blog-section-text"></span>
-                        <div class="blog-section-text">Hello everyone, in the last 2 months we have received so many excellent film rolls. I believe this is one of the best months ever.</div>
-                        <div class="blog-section-text">Thank you to everyone who allowed us to share your work, wish you a nice weekend. The following is </div>
-                        <span class="blog-section-text-highlight">"The best of July n August".</span>
-                        <a href="#" class="read-more-option">read more</a>
-                    </span>
-                    <span class="blog-section">
-                        <a href="#"><img class="image-frame" src="https://croplab.vn/wp-content/uploads/2019/07/000040-1.jpg" alt="img4"></a>
-                        <p class="blog-section-tittle">June</p>
-                        <span class="blog-section-text">Hello! After a bit of interruption, Film Store came back with</span>
-                        <span class="blog-section-text-highlight">"the best of June"</span>
-                        <div class="blog-section-text">Sincere thank you guys for the support</div>
-                        <a href="#" class="read-more-option">read more</a>
-                    </span>
-                    <span class="blog-section">
-                        <a href="#"><img class="image-frame" src="https://croplab.vn/wp-content/uploads/2019/03/0009_-1.jpg" alt="img5"></a>
-                        <p class="blog-section-tittle">want to buy film cameras</p>
-                        <div class="blog-section-text">Hello! oh i know you, like me now, I have not bought film cameras for decades. Still working at the old company. Working hard everyday,however, the pay is still not enough. Suddenly one day, I read an article like you are watching now.</div>
-                        <span class="blog-section-text">This article is for those who do not know about shooting film, or anything about film, this article will help you synthesize the first basic knowledge to begin to understand the specific characteristics of film cameras. The main purpose in this article will also include </span>
-                        <span class="blog-section-text-highlight">many words, keywords, links</span>
-                        <span class="blog-section-text"> for you to learn more on Google, Ms. Google is the one to give you the most desirable film cameras. </span>
-                        <a href="#" class="read-more-option">read more</a>
-                    </span>
-                </span>
-            </span>
-        </section>
+        <section class="blog-group" id="blog">
+        <h1 class="body-tittle">blog</h1>
+        <span class="blog-section-group">
+            <article class="blog-section">
+                <a href="#"><img class="image-frame" src="https://croplab.vn/wp-content/uploads/2019/12/0003_.jpg" alt="img1"></a>
+                <p class="blog-section-tittle">November</p>
+                <div class="blog-section-text">Hello everyone, today is the last beautiful Sunday of 2019, you have taken many great photos, haven’t you?</div>
+                <div class="blog-section-text">Thank you for supporting us all these years.Best wishes to you, happy new year!</div>
+                <span class="blog-section-text-highlight">“The best of November”.</span>
+                <a href="#" class="read-more-option">read more</a>
+            </article>
+            <article class="blog-section">
+                <a href="#"><img class="image-frame" src="https://croplab.vn/wp-content/uploads/2019/11/0002_.jpg" alt="img2"></a>
+                <p class="blog-section-tittle">September & October</p>
+                <span class="blog-section-text">Hi guys, it has been 2 months since we last met. Saigon is now entering rainy days, one moment it’ll be sunny and the next it’ll start pouring like crazy. If you havent got any certain plan for today, let’s take a seat, have a cup of tea and enjoy</span>
+                <span class="blog-section-text-highlight">“The best of September n October”.</span><br>
+                <a href="#" class="read-more-option">read more</a>
+            </article>
+            <article class="blog-section">
+                <a href="#"><img class="image-frame" src="https://croplab.vn/wp-content/uploads/2019/09/0019_19A-e1568970106121.jpg" alt="img3"></a>
+                <p class="blog-section-tittle">July & August</p>
+                <span class="blog-section-text"></span>
+                <div class="blog-section-text">Hello everyone, in the last 2 months we have received so many excellent film rolls. I believe this is one of the best months ever.</div>
+                <div class="blog-section-text">Thank you to everyone who allowed us to share your work, wish you a nice weekend. The following is </div>
+                <span class="blog-section-text-highlight">"The best of July n August".</span>
+                <a href="#" class="read-more-option">read more</a>
+            </article>
+            <article class="blog-section">
+                <a href="#"><img class="image-frame" src="https://croplab.vn/wp-content/uploads/2019/07/000040-1.jpg" alt="img4"></a>
+                <p class="blog-section-tittle">June</p>
+                <span class="blog-section-text">Hello! After a bit of interruption, Film Store came back with</span>
+                <span class="blog-section-text-highlight">"the best of June"</span>
+                <div class="blog-section-text">Sincere thank you guys for the support</div>
+                <a href="#" class="read-more-option">read more</a>
+            </article>
+            <article class="blog-section">
+                <a href="#"><img class="image-frame" src="https://croplab.vn/wp-content/uploads/2019/03/0009_-1.jpg" alt="img5"></a>
+                <p class="blog-section-tittle">want to buy film cameras</p>
+                <div class="blog-section-text">Hello! oh i know you, like me now, I have not bought film cameras for decades. Still working at the old company. Working hard everyday,however, the pay is still not enough. Suddenly one day, I read an article like you are watching now.</div>
+                <span class="blog-section-text">This article is for those who do not know about shooting film, or anything about film, this article will help you synthesize the first basic knowledge to begin to understand the specific characteristics of film cameras. The main purpose in this article will also include </span>
+                <span class="blog-section-text-highlight">many words, keywords, links</span>
+                <span class="blog-section-text"> for you to learn more on Google, Ms. Google is the one to give you the most desirable film cameras. </span>
+                <a href="#" class="read-more-option">read more</a>
+            </article>
+        </span>
+    </section>
+
+       
+    </main>
         
-        <!--Contact-->
-        <footer id="contact">
-            <span class="contact-container">
-                <img class="contact-image" src="https://images.pexels.com/photos/3596194/pexels-photo-3596194.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="contact-image">
-                <div class="contact-group">
-                    <h1 class="inner-body-tittle">our contact</h1>
-                    <span class="contact-section">
-                        <img class="saigon-image" src="saigon.png" alt="hochiminh-icon">
-                        <h1 class="contact-tittle">Ho Chi Minh city</h1>
-                            <div class="contact-text">
-                                <img class="icon-image" src="https://image.flaticon.com/icons/svg/1033/1033925.svg" alt="place">
-                                123 Tran Hung Dao street, Ben Nghe ward,district 1
-                            </div>
-                            <div class="contact-text">
-                                <img class="icon-image" src="https://image.flaticon.com/icons/svg/601/601215.svg" alt="email-image">
-                                filmstore@gmail.com
-                            </div>
-                            <div class="contact-text">
-                                 <img class="icon-image" src="https://image.flaticon.com/icons/svg/679/679397.svg" alt="telephone-image">
-                                +8412 345 6789
-                            </div>
-                    </span>
-
-                    <span class="contact-section">
-                        <img class="saigon-image" src="saigon.png" alt="hanoi-icon">
-                        <h1 class="contact-tittle">Ha Noi city</h1>
-                            <div class="contact-text">
-                                <img class="icon-image" src="https://image.flaticon.com/icons/svg/1033/1033925.svg" alt="place">
-                                123 Tran Hung Dao street, Ben Nghe ward,district 1
-                            </div>
-                            <div class="contact-text">
-                                <img class="icon-image" src="https://image.flaticon.com/icons/svg/601/601215.svg" alt="email-image">
-                                filmstore@gmail.com
-                            </div>
-                            <div class="contact-text">
-                                 <img class="icon-image" src="https://image.flaticon.com/icons/svg/679/679397.svg" alt="telephone-image">
-                                +8412 345 6789
-                            </div>
-                    </span>
-
-                    <span class="contact-section">
-                        <img class="saigon-image" src="saigon.png" alt="dalat-icon">
-                        <h1 class="contact-tittle">Da Lat city</h1>
-                    
-                            <div class="contact-text">
-                                <img class="icon-image" src="https://image.flaticon.com/icons/svg/1033/1033925.svg" alt="place">
-                                123 Tran Hung Dao street, Ben Nghe ward,district 1
-                            </div>
-                            <div class="contact-text">
-                                <img class="icon-image" src="https://image.flaticon.com/icons/svg/601/601215.svg" alt="email-image">
-                                filmstore@gmail.com
-                            </div>
-                            <div class="contact-text">
-                                 <img class="icon-image" src="https://image.flaticon.com/icons/svg/679/679397.svg" alt="telephone-image">
-                                +8412 345 6789
-                            </div>
-                        
-                    </span>
-                </div>
-            </span>
-        </footer>
-
+        
+    <!--Contact-->
+    <footer id="contact">
+        <div class="contact-group">
+            <div class="contact-section">
+                <a href="https://www.facebook.com/" class="icon-section"><img class="icon-image" src="https://image.flaticon.com/icons/svg/255/255315.svg" alt="fb-icon"></a>
+                <a href="https://www.instagram.com/" class="icon-section"><img class="icon-image" src="https://image.flaticon.com/icons/svg/408/408707.svg" alt="ig-icon"></a>
+                <a href="https://mail.google.com" class="icon-section"><img class="icon-image" src="https://image.flaticon.com/icons/svg/408/408705.svg" alt="gg-icon"></a>
+                <p class="copy-right">Copyright &copy; <script>document.write(new Date().getFullYear());</script> Coding by Nguyen Huynh Anh Phuong-s3695662-All rights reserved</p>
+            </div>
+        </div>
+    </footer>
 
     </body>
 </html>

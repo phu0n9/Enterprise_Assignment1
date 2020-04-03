@@ -1,17 +1,10 @@
 // Navigation bar
-function clickableNavBar(stringID){
-    for(var i = 0;i <document.getElementsByClassName('navSection').length;i++){
-        document.getElementsByClassName('navSection')[i].style.color = 'black';
-        document.getElementsByClassName('navSection')[i].style.textDecoration = 'none';
+function clickableNavBar(n){
+    var navBarItem = document.getElementsByClassName('navSection');
+    for(var i = 0;i<navBarItem.length;i++){
+        navBarItem[i].className = navBarItem[i].className.replace(" navActive","");
     }
-    document.getElementById(stringID).style.color = 'rgb(219, 78, 13)';
-    document.getElementById(stringID).style.textDecoration = 'underline';
-}
-
-//Combine functions
-function actionOnLoad(){
-    carousel();
-  // getLocation();
+    navBarItem[n-1].className += " navActive";
 }
 
 //Slides
@@ -50,7 +43,7 @@ function carousel() {
     }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " dotActive"; 
-    setTimeout(carousel, 7000); // Change image every 10 seconds
+    setTimeout(carousel, 7000); // Change image every 7 seconds
 }
 
 
@@ -70,17 +63,6 @@ function mouseOverServiceSection(n){
 //Form validation
 //FIXME:sticky navigation bar + form validation +smooth scroll
 var flag = 0;
-function checkPassword(){
-    if((document.getElementById("psw").value == document.getElementById("repsw").value)){
-        document.getElementById("repsw").setCustomValidity('');
-        // flag = 1;
-    }
-    else{
-        document.getElementById("repsw").setCustomValidity("Passwords don't match");
-        // flag = 0;
-    }
- }
-
 
  function validateEmail(){
  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -105,71 +87,3 @@ function checkPassword(){
          flag = 0;
      }   
  }
-
- function nextBtn(){
-    if(checkPassword() && myForm.uname.value != ""){
-        document.getElementsByClassName('form-section')[1].style.display = 'block';
-        document.getElementsByClassName('form-section')[0].style.display = 'none';
-        document.getElementById('stageBtn')[0].style.color = 'rgb(29, 146, 29)';
-        return true;
-    }
-    else{
-        alert('Check your input again.');
-        return false;
-    }
- }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Geolocation
-var x = document.getElementById("map");
-function getLocation(){
-    var optn = {enableHighAccuracy : true,timeout : Infinity,maximumAge : 0};
-    if(navigator.geolocation){
-        navigator.geolocation.watchPosition(getPosition,showError,optn);
-    }
-    else{
-        x.innerHTML = "Geolocation is not supported by this browser.";
-    }
-}
-
-function getPosition(position){
-    var lat = position.coords.latitude;
-    var long = position.coords.longitude;
-    x.innerHTML = "Latitude: " + lat + "<br>Longitude: " + long;
-}
-
-function showError(error){
-    switch(error.code){
-        case error.PERMISSION_DENIED:
-            x.innerHTML = "User denied the request for Geolocation."
-            break;
-        case error.POSITION_UNAVAILABLE:
-            x.innerHTML = "Location information is unavailable."
-            break;
-        case error.TIMEOUT:
-            x.innerHTML = "The request to get user location timed out."
-            break;
-        case error.UNKNOWN_ERROR:
-            x.innerHTML = "An unknown error occurred."
-            break;
-    }
-}

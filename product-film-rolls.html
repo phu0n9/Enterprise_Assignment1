@@ -1,157 +1,114 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <html lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Film Store</title>
+        <link rel="stylesheet" href="stylesheet.css">
         <link rel="stylesheet" href="product-stylesheet.css">
         <script type="text/javascript" src="cmd.js"></script>
         <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/movie-basics/48/v-35-512.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     </head>
 
-    <body onload="return actionOnLoad();">
-        <!--Navigation bar-->
-        <header>
+    <body>
+         <!--Navigation bar-->
+         <header>
             <div class="container">
                 <span><a href="homepage.html"><img src="https://simpleicon.com/wp-content/uploads/roll-film.png" alt="logo" class="logo"></a></span>
                 <nav>
                     <ul>
-                        <li><a href="homepage.html" id="home" class="navSection" onclick="return clickableNavBar(this.id)">Home</a></li>
-                        <li><a href="#aboutUs" id="aboutUs" class="navSection" onclick="return clickableNavBar(this.id)">About us</a></li>
-                        <li><a href="#service" id="service" class="navSection" onclick="return clickableNavBar(this.id)">Service</a></li>
+                        <li><a href="homepage.html" id="home" class="navSection" onclick="return clickableNavBar(1)">Home</a></li>
                         <li>
-                            <a href="product-film-rolls.html" class="navSection navActive" onclick="return clickableNavBar(this.id)">Product</a>
-                            <ul class="product-hover">
-                                <td><a href="product-film-rolls.html" id="productFilmRoll" class="product-item-tittle">Film Rolls</a></td> <br>
-                                <td><a href="product-film-camera.html" id="productFilmCamera"  class="product-item-tittle">Film Cameras</a></td>
+                            <a href="#service" class="navSection" onclick="return clickableNavBar(2)">Service</a>
+                            <img class="drop-down-icon" src="https://image.flaticon.com/icons/svg/60/60995.svg" alt="drop-down-icon">
+                            <ul class="dropdown-hover">
+                                <td><a href="#" class="dropdown-item-tittle">Film Processing</a></td>
+                                <td><a href="#" class="dropdown-item-tittle">Film Scanning</a></td>
+                                <td><a href="#" class="dropdown-item-tittle">Darkroom Processing</a></td>
                             </ul>
                         </li>
-                        <li><a href="blog.html" id="blog" class="navSection" onclick="return clickableNavBar(this.id)">Blog</a></li>
+                        <li>
+                            <a href="product-film-rolls.html" class="navSection navActive" onclick="return clickableNavBar(3)">Product</a>
+                            <img class="drop-down-icon" src="https://image.flaticon.com/icons/svg/60/60995.svg" alt="drop-down-icon">
+                            <ul class="dropdown-hover">
+                                <td><a href="product-film-rolls.html" class="dropdown-item-tittle">Film Rolls</a></td>
+                                <td><a href="product-film-camera.html" class="dropdown-item-tittle">Film Cameras</a></td>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html" class="navSection" onclick="return clickableNavBar(4)">Blog</a></li>
+                        <li><a href="contactUs.html" class="navSection" onclick="return clickableNavBar(5)">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         
-        <span class="product-container">
+        <main class="product-container">
             <section class="product-sidebar">
                 <h1 class="product-sidebar-tittle">our products</h1>
                 <a href="product-film-rolls.html" id="filmRollSection" class="product-sidebar-text product-sidebar-text-active">Film Rolls</a> <br>
                 <a href="product-film-camera.html" id="filmCameraSection" class="product-sidebar-text">Film Cameras</a>
             </section>
     
-            <section>
-                <div class="grid-container">
-                    <a href="#" class="grid-item">
-                        <img class="grid-item-image" src="https://cf.shopee.vn/file/d77b86e86667ab01dc4549f2d4900b20_tn" alt="filmroll1">
-                        <div class="grid-item-text">Fuji Colorplus 200 24 rolls</div>
-                        <div class="grid-item-price">120.000đ</div>
-                    </a>
-                    <a href="#" class="grid-item">
-                        <img class="grid-item-image" src="https://thedarkroom.com/wp-content/uploads/2019/07/Kodacolor-Colorplus-200-35mm-film.jpg" alt="filmroll2">
-                        <div class="grid-item-text">Kodak Colorplus 200 36 rolls</div>
-                        <div class="grid-item-price">145.000đ</div>
-                    </a>
-                    <a href="#" class="grid-item">
-                        <img class="grid-item-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR73cR9VF4iMjGFAy46PUcSa0s6plh9Hqa7U9AwdymAmZvE6jzB" alt="filmroll3">
-                        <div class="grid-item-text">Kodak Gold 200 36 rolls</div>
-                        <div class="grid-item-price">150.000đ</div>
-                    </a>
-                    <a href="#" class="grid-item">
-                        <img class="grid-item-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTuwrjh9O1RyrsO7JvUMl43OtQ05fQDk_jy01ewv1rePRvAaoBv" alt="filmroll4">
-                        <div class="grid-item-text">Kodak Potra 400 36 rolls</div>
-                        <div class="grid-item-price">230.000đ</div>
-                    </a>
-                    <a href="#" class="grid-item">
-                        <img class="grid-item-image" src="https://secureservercdn.net/45.40.155.175/vzl.5af.myftpupload.com/wp-content/uploads/2020/01/ULtramax4002-scaled.jpg?time=1583899454" alt="filmroll5">
-                        <div class="grid-item-text">Kodak Ultramax 400 36 rolls</div>
-                        <div class="grid-item-price">150.000đ</div>
-                    </a>
-                    <a href="#" class="grid-item">
-                        <img class="grid-item-image" src="https://phukienmayanhdanang.com/wp-content/uploads/2019/04/Kodak-Pro-Image-100-35mm-Film-1.jpg" alt="filmroll6">
-                        <div class="grid-item-text">Kodak Proimage 100 36 rolls</div>
-                        <div class="grid-item-price">130.000đ</div>
-                    </a>
-                    <a href="#" class="grid-item">
-                        <img class="grid-item-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQaxwWshS5LnP6AyYlsRBPzLoJojdjzeW9dIK5IXRjU6jGaUJBY" alt="filmroll7">
-                        <div class="grid-item-text">Kodak Superia 400 36 rolls</div>
-                        <div class="grid-item-price">145.000đ</div>
-                    </a>
-                    <a href="#" class="grid-item">
-                        <img class="grid-item-image" src="https://media.karousell.com/media/photos/products/2019/07/25/agfa_vista_200_35mm_film_1564057611_fffeabdc_progressive.jpg" alt="filmroll8">
-                        <div class="grid-item-text">Agfa Vista Plus 200 36 rolls</div>
-                        <div class="grid-item-price">170.000đ</div>
-                    </a>
-                    <a href="#" class="grid-item">
-                        <img class="grid-item-image" src="https://www.fotoimpex.com/shop/images/products/main/Lomography-Color-Negative-100-35mm.jpg" alt="filmroll9">
-                        <div class="grid-item-text">Lomography Color 100 36 rolls</div>
-                        <div class="grid-item-price">200.000đ</div>
-                    </a>
-                </div>
-
+            <section class="grid-container">
+                <a href="#" class="grid-item">
+                    <img class="grid-item-image" src="https://cf.shopee.vn/file/d77b86e86667ab01dc4549f2d4900b20_tn" alt="filmroll1">
+                    <div class="grid-item-text">Fuji Colorplus 200 24 rolls</div>
+                    <div class="grid-item-price">120.000đ</div>
+                </a>
+                <a href="#" class="grid-item">
+                    <img class="grid-item-image" src="https://thedarkroom.com/wp-content/uploads/2019/07/Kodacolor-Colorplus-200-35mm-film.jpg" alt="filmroll2">
+                    <div class="grid-item-text">Kodak Colorplus 200 36 rolls</div>
+                    <div class="grid-item-price">145.000đ</div>
+                </a>
+                <a href="#" class="grid-item">
+                    <img class="grid-item-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR73cR9VF4iMjGFAy46PUcSa0s6plh9Hqa7U9AwdymAmZvE6jzB" alt="filmroll3">
+                    <div class="grid-item-text">Kodak Gold 200 36 rolls</div>
+                    <div class="grid-item-price">150.000đ</div>
+                </a>
+                <a href="#" class="grid-item">
+                    <img class="grid-item-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTuwrjh9O1RyrsO7JvUMl43OtQ05fQDk_jy01ewv1rePRvAaoBv" alt="filmroll4">
+                    <div class="grid-item-text">Kodak Potra 400 36 rolls</div>
+                    <div class="grid-item-price">230.000đ</div>
+                </a>
+                <a href="#" class="grid-item">
+                    <img class="grid-item-image" src="https://secureservercdn.net/45.40.155.175/vzl.5af.myftpupload.com/wp-content/uploads/2020/01/ULtramax4002-scaled.jpg?time=1583899454" alt="filmroll5">
+                    <div class="grid-item-text">Kodak Ultramax 400 36 rolls</div>
+                    <div class="grid-item-price">150.000đ</div>
+                </a>
+                <a href="#" class="grid-item">
+                    <img class="grid-item-image" src="https://phukienmayanhdanang.com/wp-content/uploads/2019/04/Kodak-Pro-Image-100-35mm-Film-1.jpg" alt="filmroll6">
+                    <div class="grid-item-text">Kodak Proimage 100 36 rolls</div>
+                    <div class="grid-item-price">130.000đ</div>
+                </a>
+                <a href="#" class="grid-item">
+                    <img class="grid-item-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQaxwWshS5LnP6AyYlsRBPzLoJojdjzeW9dIK5IXRjU6jGaUJBY" alt="filmroll7">
+                    <div class="grid-item-text">Kodak Superia 400 36 rolls</div>
+                    <div class="grid-item-price">145.000đ</div>
+                </a>
+                <a href="#" class="grid-item">
+                    <img class="grid-item-image" src="https://media.karousell.com/media/photos/products/2019/07/25/agfa_vista_200_35mm_film_1564057611_fffeabdc_progressive.jpg" alt="filmroll8">
+                    <div class="grid-item-text">Agfa Vista Plus 200 36 rolls</div>
+                    <div class="grid-item-price">170.000đ</div>
+                </a>
+                <a href="#" class="grid-item">
+                    <img class="grid-item-image" src="https://www.fotoimpex.com/shop/images/products/main/Lomography-Color-Negative-100-35mm.jpg" alt="filmroll9">
+                    <div class="grid-item-text">Lomography Color 100 36 rolls</div>
+                    <div class="grid-item-price">200.000đ</div>
+                </a>
             </section>
-        </span>
+        </main>
 
-         <!--Contact-->
-         <footer id="contact">
-            <span class="contact-container">
-                <img class="contact-image" src="https://images.pexels.com/photos/3596194/pexels-photo-3596194.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="contact-image">
-                <div class="contact-group">
-                    <h1 class="inner-body-tittle">our contact</h1>
-                    <span class="contact-section">
-                        <img class="saigon-image" src="saigon.png" alt="hochiminh-icon">
-                        <h1 class="contact-tittle">Ho Chi Minh city</h1>
-                            <div class="contact-text">
-                                <img class="icon-image" src="https://image.flaticon.com/icons/svg/1033/1033925.svg" alt="place">
-                                123 Tran Hung Dao street, Ben Nghe ward,district 1
-                            </div>
-                            <div class="contact-text">
-                                <img class="icon-image" src="https://image.flaticon.com/icons/svg/601/601215.svg" alt="email-image">
-                                filmstore@gmail.com
-                            </div>
-                            <div class="contact-text">
-                                 <img class="icon-image" src="https://image.flaticon.com/icons/svg/679/679397.svg" alt="telephone-image">
-                                +8412 345 6789
-                            </div>
-                    </span>
-
-                    <span class="contact-section">
-                        <img class="saigon-image" src="saigon.png" alt="hanoi-icon">
-                        <h1 class="contact-tittle">Ha Noi city</h1>
-                            <div class="contact-text">
-                                <img class="icon-image" src="https://image.flaticon.com/icons/svg/1033/1033925.svg" alt="place">
-                                123 Tran Hung Dao street, Ben Nghe ward,district 1
-                            </div>
-                            <div class="contact-text">
-                                <img class="icon-image" src="https://image.flaticon.com/icons/svg/601/601215.svg" alt="email-image">
-                                filmstore@gmail.com
-                            </div>
-                            <div class="contact-text">
-                                 <img class="icon-image" src="https://image.flaticon.com/icons/svg/679/679397.svg" alt="telephone-image">
-                                +8412 345 6789
-                            </div>
-                    </span>
-
-                    <span class="contact-section">
-                        <img class="saigon-image" src="saigon.png" alt="dalat-icon">
-                        <h1 class="contact-tittle">Da Lat city</h1>
-                    
-                            <div class="contact-text">
-                                <img class="icon-image" src="https://image.flaticon.com/icons/svg/1033/1033925.svg" alt="place">
-                                123 Tran Hung Dao street, Ben Nghe ward,district 1
-                            </div>
-                            <div class="contact-text">
-                                <img class="icon-image" src="https://image.flaticon.com/icons/svg/601/601215.svg" alt="email-image">
-                                filmstore@gmail.com
-                            </div>
-                            <div class="contact-text">
-                                 <img class="icon-image" src="https://image.flaticon.com/icons/svg/679/679397.svg" alt="telephone-image">
-                                +8412 345 6789
-                            </div>
-                    </span>
+        <!--Contact-->
+        <footer id="contact">
+            <div class="contact-group">
+                <div class="contact-section">
+                    <a href="https://www.facebook.com/" class="icon-section"><img class="icon-image" src="https://image.flaticon.com/icons/svg/255/255315.svg" alt="fb-icon"></a>
+                    <a href="https://www.instagram.com/" class="icon-section"><img class="icon-image" src="https://image.flaticon.com/icons/svg/408/408707.svg" alt="ig-icon"></a>
+                    <a href="https://mail.google.com" class="icon-section"><img class="icon-image" src="https://image.flaticon.com/icons/svg/408/408705.svg" alt="gg-icon"></a>
+                    <p class="copy-right">Copyright &copy; <script>document.write(new Date().getFullYear());</script> Coding by Nguyen Huynh Anh Phuong-s3695662-All rights reserved</p>
                 </div>
-            </span>
+            </div>
         </footer>
-
     </body>
 </html>
