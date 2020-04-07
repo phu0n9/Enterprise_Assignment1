@@ -97,3 +97,24 @@
 .read-more-option:hover{
     color: rgb(78, 77, 77);
 }
+
+@media screen and (max-width: 600px){
+   .blog-container{
+       width: 100%;
+       left: 0;
+       right: 0;
+       margin: 0 auto;
+       height: 4400px;
+   }
+   .blog-tittle{
+       margin-left: 3%;
+   }
+   .article-section-box{
+       width: 90%;
+       margin-left: 5%;
+       margin-right: 5%;
+   }
+    .image-frame{
+       width: 100%;
+   }
+}

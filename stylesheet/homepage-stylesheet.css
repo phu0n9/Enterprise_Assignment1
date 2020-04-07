@@ -1,4 +1,3 @@
-/*------------------------------------Homepage-------------------------------------------*/
 /* slideshow */
 
 .slideshow-container{
@@ -163,43 +162,55 @@
     background-color: sandybrown;
 }
 
-.body-tittle{
-    padding-top: 70px;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: lighter;
-    color: black;
-    margin: auto;
-    width: 20%;    
-}   
+/*about us*/
 
-.body-tittle::after{
+.about-us-text{
+    padding-top: 1%;
+    font-weight: lighter;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.about-us-row{
+    /* background-color: blueviolet; */
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid rgb(194, 192, 192);
+}
+
+.about-us-column{
+    float: left;
+    width: 30%;
+    /* background-color: brown; */
+    margin-left: 2%;
+}
+
+.about-us-row::after{
     content: "";
-    display: block;
-    border-bottom: 3px solid sandybrown;
-    width: 20%;
-    margin: 3% auto;
+    display: table;
+    clear: both;
+}
+
+.about-us-section-tittle{
+    /* background-color: chartreuse; */
+    padding-top: 4%;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.column-text{
+    padding-top: 4%;
+    color: rgb(112, 112, 112);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
 }
 
 
 /* service section  */
-.inner-body-tittle{
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: lighter;
-    color: white;
-    margin: auto;
-    width: 20%;    
-    font-size: 25px;
-}
-
-.inner-body-tittle:after{
-    content: "";
-    display: block;
-    border-bottom: 3px solid sandybrown;
-    width: 20%;
-    margin: 3% auto;
-}
 
 .service-box{
     position: absolute;
@@ -213,26 +224,33 @@
     height: 90%;
     filter: brightness(30%);
     border-radius: 3px;
+    padding-top: 8%;
 }
 
-.service-group-box{
+.service-row{
+    /* background-color: blueviolet; */
+    width: 100%;
+    height: 800px;
     position: absolute;
-    bottom: 90px;
+    top: 35%;
+    overflow: hidden;
 }
 
-.service-section-box{
-    width: 30%;
-    height: 300px;
-    display: block;
+.service-column{
     float: left;
-    border: 1px solid rgba(128, 128, 128, 0.671);
-    margin: 0 20px;
-}  
-
-.service-section-box:hover{
+    width: 25%;
     background-color: rgba(0, 0, 0, 0.63);
+    border: 2px solid black;
+    text-decoration: none;
+    margin-left: 6%;
+    margin-top: 3%;
 }
 
+.service-row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 .service-image-box{
     padding: 5% 37%;
     width: 30%;
@@ -264,44 +282,40 @@
 
 /* blog section */
 .blog-group{
-    position: relative;
     width: 100%;
-    height: 1600px;
-    padding-top: 35%;
+    margin-top: 600px;
+    padding-bottom: 200px;
 }
 
-.blog-section-group{
-    width: 1100px;
-    left: 10%;
-    right: 10%;
-    margin: auto;
-    display: block;
+.blog-row{
+    width: 90%;
+    /* background-color: blueviolet; */
+    padding-top: 20px;  
+    margin-left: 3%;
 }
 
-.blog-section{
-    width: 320px;
-    height: 800px;
+.blog-row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.blog-column{
     float: left;
-    margin: 3% 2%;
+    width: 25%;
+    /* background-color: cornflowerblue; */
     font-family: 'Courier New', Courier, monospace;
     border-bottom: 1px solid rgb(194, 192, 192);
+    margin-left: 7%;
+    padding-bottom: 3%;
 }
 
-.blog-section:nth-child(2){
-    height: 520px;
-}
-
-.blog-section:nth-child(4){
-    height: 560px;
-}
-
-.blog-section:nth-child(5){
-    height: 870px;
-    margin-top: -26%;
+.blog-column:nth-child(5){
+    margin-top: -13%;
 }
 
 .image-frame{
-    width: 320px;
+    width: 100%;
 }
 
 .image-frame:hover{
@@ -316,10 +330,12 @@
 
 .blog-section-text{
     color: rgb(78, 77, 77);
+    width: 100%;
 }
 
 .blog-section-text-highlight{
     font-weight: bold;
+    width: 100%;
 }
 
 .read-more-option{
@@ -334,3 +350,66 @@
 .read-more-option:hover{
     color: rgb(78, 77, 77);
 }
+
+/*responsive website*/
+@media screen and (max-width: 600px){
+    .body-tittle{
+        width: 100%;
+        margin-top: 10%;
+    }
+    .inner-body-tittle{
+        width: 100%;
+    }
+    .slide-img{
+        width: 100%;
+        height: 400px;
+    }
+    .messageBox{
+        width: 30%;
+        height: 40%;
+        margin-bottom: 50px;
+    }
+    .slideCaption{
+        font-size: 20px;
+    }
+    .contactBtn{
+        width: 79px;
+        height: 30px;
+        font-size: 8px;
+        margin: 100px 20px;
+    }
+    .about-us-column {
+      width: 100%;
+    }
+    .service-column {
+        width: 90%;
+        margin-left: 5%;
+        font-size: 15px;
+    }
+    .service-image-box{
+        width: 30%;
+    }
+    .service-tittle{
+        width: 100%;
+    }
+    .service-banner-box{
+        height: 900px;
+    }
+    .blog-group{
+        height: 3700px;
+        margin-top: 900px;
+    }
+    .blog-row{
+        margin-left: 20px;
+    }
+    .blog-column{
+        width: 100%;
+        margin-left: 0;
+        padding-bottom: 20px;
+        padding-top: 30px;
+        font-size: 15px;
+    }
+    .blog-column:nth-child(5){
+        margin-top: 1%;
+    }
+  }

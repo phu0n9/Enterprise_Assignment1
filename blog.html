@@ -5,23 +5,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Film Store</title>
-        <link rel="stylesheet" href="stylesheet.css">
-        <link rel="stylesheet" href="blog-stylesheet.css">
+        <link rel="stylesheet" href="stylesheet/stylesheet.css">
+        <link rel="stylesheet" href="stylesheet/blog-stylesheet.css">
         <script type="text/javascript" src="cmd.js"></script>
         <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/movie-basics/48/v-35-512.png">
     </head>
 
     <body>
-        <!--Navigation bar-->
-        <header>
+         <!--Navigation bar-->
+         <header>
+            <a onclick="return toggleIconClickCount()" href="javascript:void(0);" class="icon-container"><img src="https://image.flaticon.com/icons/svg/483/483334.svg" alt="hamburger-icon" class="icon"></a>
             <div class="container">
                 <span><a href="homepage.html"><img src="https://simpleicon.com/wp-content/uploads/roll-film.png" alt="logo" class="logo"></a></span>
                 <nav>
                     <ul>
                         <li><a href="homepage.html" id="home" class="navSection" onclick="return clickableNavBar(1)">Home</a></li>
                         <li>
-                            <a href="#service" class="navSection" onclick="return clickableNavBar(2)">Service</a>
-                            <img class="drop-down-icon" src="https://image.flaticon.com/icons/svg/60/60995.svg" alt="drop-down-icon">
+                            <a href="#service" class="navSection" onclick="return clickableNavBar(2)">Service<img class="drop-down-icon" src="https://image.flaticon.com/icons/svg/60/60995.svg" alt="drop-down-icon"></a>
                             <ul class="dropdown-hover">
                                 <td><a href="#" class="dropdown-item-tittle">Film Processing</a></td>
                                 <td><a href="#" class="dropdown-item-tittle">Film Scanning</a></td>
@@ -29,8 +29,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="product-film-rolls.html" class="navSection" onclick="return clickableNavBar(3)">Product</a>
-                            <img class="drop-down-icon" src="https://image.flaticon.com/icons/svg/60/60995.svg" alt="drop-down-icon">
+                            <a href="product-film-rolls.html" class="navSection" onclick="return clickableNavBar(3)">Product                            <img class="drop-down-icon" src="https://image.flaticon.com/icons/svg/60/60995.svg" alt="drop-down-icon"></a>
                             <ul class="dropdown-hover">
                                 <td><a href="product-film-rolls.html" class="dropdown-item-tittle">Film Rolls</a></td>
                                 <td><a href="product-film-camera.html" class="dropdown-item-tittle">Film Cameras</a></td>

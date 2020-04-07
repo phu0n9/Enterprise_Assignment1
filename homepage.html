@@ -5,8 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Film Store</title>
-        <link rel="stylesheet" href="stylesheet.css">
-        <link rel="stylesheet" href="homepage-stylesheet.css">
+        <link rel="stylesheet" href="stylesheet/stylesheet.css">
+        <link rel="stylesheet" href="stylesheet/homepage-stylesheet.css">
         <script type="text/javascript" src="cmd.js"></script>
         <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/movie-basics/48/v-35-512.png">
     </head>
@@ -14,14 +14,14 @@
     <body onload="return carousel();">
          <!--Navigation bar-->
          <header>
+            <a onclick="return toggleIconClickCount()" href="javascript:void(0);" class="icon-container"><img src="https://image.flaticon.com/icons/svg/483/483334.svg" alt="hamburger-icon" class="icon"></a>
             <div class="container">
                 <span><a href="homepage.html"><img src="https://simpleicon.com/wp-content/uploads/roll-film.png" alt="logo" class="logo"></a></span>
                 <nav>
                     <ul>
                         <li><a href="homepage.html" id="home" class="navSection navActive" onclick="return clickableNavBar(1)">Home</a></li>
                         <li>
-                            <a href="#service" class="navSection" onclick="return clickableNavBar(2)">Service</a>
-                            <img class="drop-down-icon" src="https://image.flaticon.com/icons/svg/60/60995.svg" alt="drop-down-icon">
+                            <a href="#service" class="navSection" onclick="return clickableNavBar(2)">Service<img class="drop-down-icon" src="https://image.flaticon.com/icons/svg/60/60995.svg" alt="drop-down-icon"></a>
                             <ul class="dropdown-hover">
                                 <td><a href="#" class="dropdown-item-tittle">Film Processing</a></td>
                                 <td><a href="#" class="dropdown-item-tittle">Film Scanning</a></td>
@@ -29,8 +29,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="product-film-rolls.html" class="navSection" onclick="return clickableNavBar(3)">Product</a>
-                            <img class="drop-down-icon" src="https://image.flaticon.com/icons/svg/60/60995.svg" alt="drop-down-icon">
+                            <a href="product-film-rolls.html" class="navSection" onclick="return clickableNavBar(3)">Product                            <img class="drop-down-icon" src="https://image.flaticon.com/icons/svg/60/60995.svg" alt="drop-down-icon"></a>
                             <ul class="dropdown-hover">
                                 <td><a href="product-film-rolls.html" class="dropdown-item-tittle">Film Rolls</a></td>
                                 <td><a href="product-film-camera.html" class="dropdown-item-tittle">Film Cameras</a></td>
@@ -114,35 +113,50 @@
         <!--About us-->
         <section id="about">
             <h1 class="body-tittle">about us</h1>
+            <div class="about-us-text">Film Store offers the best quality film scanning services in Vietnam and we cherish each of your films as if they were our own.</div>
+            <div class="about-us-text">We start doing this work with passion, and will pursue to the end for expanding the growing shooting film community</div>
+            <div class="about-us-row">
+                <div class="about-us-column">
+                    <h2 class="about-us-section-tittle">lamination process</h2>
+                    <div class="column-text">We use Noritsu V50 film scanning machine which has the high quality and stability for C-41 process. For the other processes, we use our own automatic mini scanning machine made by us in order to scan compatibly with all types of film.</div>
+                </div>
+                <div class="about-us-column">
+                    <h2 class="about-us-section-tittle">quality assurance</h2>
+                    <div class="column-text">We use genuine chemicals and deionized pure water for all lamination processes. This gives the highest stability and quality to the film.</div>
+                </div>
+                <div class="about-us-column">
+                    <h2 class="about-us-section-tittle">scan service</h2>
+                    <div class="column-text">Fuji Frontier SP-3000 and Noritsu HS-1800, two leading scanners currently used by most major labs in the world to scan 35mm and 120.</div>
+                    <div class="column-text">In addition, the Lab also has Epson V850 Pro to scan LargeFormat films.</div>
+                </div>
+            </div>
         </section>
        
          <!--Service-->
-        <section id="service">
-            <span class="service-box">
-                <img class="service-banner-box" src="https://images.squarespace-cdn.com/content/v1/53a60116e4b0488fb14d69d8/1543599160315-GS7TDPABRY8SNZVPMQVO/ke17ZwdGBToddI8pDm48kPyxK6AB3zgGizbLyl3cQLF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0hHMyhIh2kKzuOL3ydJCryA1F0gmNLmEt4Nikyd91URavr8Aoi-yShiL3L-0iJr14g/Why+I+Started+Shooting+Film+%7C+Living+Minnaly+__4.JPG?format=2500w" alt="service-image"> 
-                <div class="service-group-box">
-                    <h1 class="inner-body-tittle">our service</h1> 
-                    <a href="#" class="service-section-box" onmouseover="return mouseOverServiceSection(1)">
-                        <img src="https://llab.vn/wp-content/uploads/2017/04/ngph_ll-service-3.png" alt="scanFilm" class="service-image-box">
-                        <h1 class="service-tittle">film processing</h1>
-                    </a> 
-                    <a href="#" class="service-section-box" onmouseover="return mouseOverServiceSection(2)">
-                        <img src="https://llab.vn/wp-content/uploads/2017/04/ngph_ll-service-2.png" alt="printFilm" class="service-image-box">
-                        <h1 class="service-tittle">film scanning</h1>
-                    </a> 
-                    <a href="#" class="service-section-box" onmouseover="return mouseOverServiceSection(3)">
-                        <img src="https://llab.vn/wp-content/uploads/2017/04/ngph_ll-service-1.png" alt="darkRoomFilm" class="service-image-box">
-                        <h1 class="service-tittle">darkroom processing</h1>
-                    </a> 
-                </div>
-            </span>
+        <section id="service" class="service-box">
+            <img class="service-banner-box" src="https://images.squarespace-cdn.com/content/v1/53a60116e4b0488fb14d69d8/1543599160315-GS7TDPABRY8SNZVPMQVO/ke17ZwdGBToddI8pDm48kPyxK6AB3zgGizbLyl3cQLF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0hHMyhIh2kKzuOL3ydJCryA1F0gmNLmEt4Nikyd91URavr8Aoi-yShiL3L-0iJr14g/Why+I+Started+Shooting+Film+%7C+Living+Minnaly+__4.JPG?format=2500w" alt="service-image"> 
+            <div class="service-row">
+                <h1 class="inner-body-tittle">our service</h1> 
+                <a href="#" class="service-column" onmouseover="return mouseOverServiceSection(1)">
+                    <img src="https://llab.vn/wp-content/uploads/2017/04/ngph_ll-service-3.png" alt="scanFilm" class="service-image-box">
+                    <h1 class="service-tittle">film processing</h1>
+                </a> 
+                <a href="#" class="service-column" onmouseover="return mouseOverServiceSection(2)">
+                    <img src="https://llab.vn/wp-content/uploads/2017/04/ngph_ll-service-2.png" alt="printFilm" class="service-image-box">
+                    <h1 class="service-tittle">film scanning</h1>
+                </a> 
+                <a href="#" class="service-column" onmouseover="return mouseOverServiceSection(3)">
+                    <img src="https://llab.vn/wp-content/uploads/2017/04/ngph_ll-service-1.png" alt="darkRoomFilm" class="service-image-box">
+                    <h1 class="service-tittle">darkroom processing</h1>
+                </a> 
+            </div>
         </section>
 
         <!--Blog-->
         <section class="blog-group" id="blog">
         <h1 class="body-tittle">blog</h1>
-        <span class="blog-section-group">
-            <article class="blog-section">
+        <div class="blog-row">
+            <article class="blog-column">
                 <a href="#"><img class="image-frame" src="https://croplab.vn/wp-content/uploads/2019/12/0003_.jpg" alt="img1"></a>
                 <p class="blog-section-tittle">November</p>
                 <div class="blog-section-text">Hello everyone, today is the last beautiful Sunday of 2019, you have taken many great photos, haven’t you?</div>
@@ -150,14 +164,14 @@
                 <span class="blog-section-text-highlight">“The best of November”.</span>
                 <a href="#" class="read-more-option">read more</a>
             </article>
-            <article class="blog-section">
+            <article class="blog-column">
                 <a href="#"><img class="image-frame" src="https://croplab.vn/wp-content/uploads/2019/11/0002_.jpg" alt="img2"></a>
                 <p class="blog-section-tittle">September & October</p>
                 <span class="blog-section-text">Hi guys, it has been 2 months since we last met. Saigon is now entering rainy days, one moment it’ll be sunny and the next it’ll start pouring like crazy. If you havent got any certain plan for today, let’s take a seat, have a cup of tea and enjoy</span>
                 <span class="blog-section-text-highlight">“The best of September n October”.</span><br>
                 <a href="#" class="read-more-option">read more</a>
             </article>
-            <article class="blog-section">
+            <article class="blog-column">
                 <a href="#"><img class="image-frame" src="https://croplab.vn/wp-content/uploads/2019/09/0019_19A-e1568970106121.jpg" alt="img3"></a>
                 <p class="blog-section-tittle">July & August</p>
                 <span class="blog-section-text"></span>
@@ -166,7 +180,7 @@
                 <span class="blog-section-text-highlight">"The best of July n August".</span>
                 <a href="#" class="read-more-option">read more</a>
             </article>
-            <article class="blog-section">
+            <article class="blog-column">
                 <a href="#"><img class="image-frame" src="https://croplab.vn/wp-content/uploads/2019/07/000040-1.jpg" alt="img4"></a>
                 <p class="blog-section-tittle">June</p>
                 <span class="blog-section-text">Hello! After a bit of interruption, Film Store came back with</span>
@@ -174,7 +188,7 @@
                 <div class="blog-section-text">Sincere thank you guys for the support</div>
                 <a href="#" class="read-more-option">read more</a>
             </article>
-            <article class="blog-section">
+            <article class="blog-column">
                 <a href="#"><img class="image-frame" src="https://croplab.vn/wp-content/uploads/2019/03/0009_-1.jpg" alt="img5"></a>
                 <p class="blog-section-tittle">want to buy film cameras</p>
                 <div class="blog-section-text">Hello! oh i know you, like me now, I have not bought film cameras for decades. Still working at the old company. Working hard everyday,however, the pay is still not enough. Suddenly one day, I read an article like you are watching now.</div>
@@ -183,7 +197,7 @@
                 <span class="blog-section-text"> for you to learn more on Google, Ms. Google is the one to give you the most desirable film cameras. </span>
                 <a href="#" class="read-more-option">read more</a>
             </article>
-        </span>
+        </div>
     </section>
 
        
