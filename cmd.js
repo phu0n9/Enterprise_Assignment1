@@ -79,13 +79,13 @@ function serviceOnScrolling(){
     }
 
     if(y >= 1 && y <= 7){
-            sidebarTittle[0].className += " service-sidebar-tittle-active"; 
-        }
-        else if(y>7 && y< 13){
-            sidebarTittle[1].className += " service-sidebar-tittle-active"; 
-        }
-        else{
-            sidebarTittle[2].className += " service-sidebar-tittle-active"; 
+        sidebarTittle[0].className += " service-sidebar-tittle-active"; 
+    }
+    else if(y>7 && y< 13){
+        sidebarTittle[1].className += " service-sidebar-tittle-active"; 
+    }
+    else{
+        sidebarTittle[2].className += " service-sidebar-tittle-active"; 
     }
 }
 
