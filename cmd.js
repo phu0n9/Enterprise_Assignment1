@@ -75,8 +75,7 @@ function serviceOnScrolling(){
     var sidebarTittle = document.querySelectorAll('#sidebar');
     const y = 1+ (window.scrollY || window.pageYOffset) / 150;
     for (let i = 0; i < sidebarTittle.length; i++) {
-        sidebarTittle[i].className = sidebarTittle[i].className.replace(" service-sidebar-tittle-active");  
-        sidebarTittle[i].className += " service-sidebar-tittle"; 
+        sidebarTittle[i].className = sidebarTittle[i].className.replace(" service-sidebar-tittle-active","");  
     }
 
     if(y >= 1 && y <= 7){
