@@ -6,7 +6,7 @@ RMIT University Vietnam Course: EEET2580 Enterprise Application Development </br
 
 Semester: 2020A </br>
 
-Assessment: Assignment 1 </br>
+Assessment: Assignment 1 -Front-end Website Development</br>
 
 Name: Nguyen Huynh Anh Phuong (s3695662)
 
