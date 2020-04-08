@@ -70,15 +70,36 @@ function mouseOverServiceSection(n){
     imageBox[n-1].className += " upAndDown";
 }
 
+//scrolling on service page
+function serviceOnScrolling(){
+    var sidebarTittle = document.querySelectorAll('#sidebar');
+    const y = 1+ (window.scrollY || window.pageYOffset) / 150;
+    for (let i = 0; i < sidebarTittle.length; i++) {
+        sidebarTittle[i].className = sidebarTittle[i].className.replace(" service-sidebar-tittle-active");  
+        sidebarTittle[i].className += " service-sidebar-tittle"; 
+    }
+
+    if(y >= 1 && y <= 7){
+            sidebarTittle[0].className += " service-sidebar-tittle-active"; 
+        }
+        else if(y>7 && y< 13){
+            sidebarTittle[1].className += " service-sidebar-tittle-active"; 
+        }
+        else{
+            sidebarTittle[2].className += " service-sidebar-tittle-active"; 
+    }
+}
+
+
 // Initialize and add the map
-// function initMap() {
-//     // The location of RMIT
-//     var rmit = {lat: 10.72986, lng: 106.69408};
-//     // The map, centered at RMIT
-//     var map = new google.maps.Map(document.getElementById('mapholder'), {zoom: 4, center: rmit});
-//     // The marker, positioned at RMIT
-//     var marker = new google.maps.Marker({position: rmit, map: map});
-// }
+function initMap() {
+    // The location of RMIT
+    var rmit = {lat: 10.72986, lng: 106.69408};
+    // The map, centered at RMIT
+    var map = new google.maps.Map(document.getElementById('mapholder'), {zoom: 4, center: rmit});
+    // The marker, positioned at RMIT
+    var marker = new google.maps.Marker({position: rmit, map: map});
+}
 
 
 //Form validation

@@ -29,7 +29,6 @@ main{
     top: 30%;
     left: 10%;
     right: 10%;
-    /* background-color: chartreuse; */
 }
 
 .form-box-row::after{
@@ -42,12 +41,10 @@ main{
     width: 50%;
     height: auto;
     float: left;
-    /* background-color: #66afe9; */
 }
 
 .form-box-column:nth-child(2){
     float: right;
-    /* background-color: brown; */
 }
 
 .form-box-tittle{
@@ -131,7 +128,6 @@ textarea:invalid{
     float: right;
     width: 50%;
     height: 50%;
-    /* background-color: purple; */
 }
 
 .submitFormBtn{

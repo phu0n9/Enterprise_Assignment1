@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <html lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Film Store</title>
+        <link rel="stylesheet" href="stylesheet/stylesheet.css">
+        <link rel="stylesheet" href="stylesheet/service-stylesheet.css">
+        <script type="text/javascript" src="cmd.js"></script>
+        <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/movie-basics/48/v-35-512.png">
+    </head>
+
+    <body onscroll="return serviceOnScrolling();">
+         <!--Navigation bar-->
+         <header>
+            <a onclick="return toggleIconClickCount()" href="javascript:void(0);" class="icon-container"><img src="https://image.flaticon.com/icons/svg/483/483334.svg" alt="hamburger-icon" class="icon"></a>
+            <div class="container">
+                <span><a href="homepage.html"><img src="https://simpleicon.com/wp-content/uploads/roll-film.png" alt="logo" class="logo"></a></span>
+                <nav>
+                    <ul>
+                        <li><a href="homepage.html" id="home" class="navSection" onclick="return clickableNavBar(1)">Home</a></li>
+                        <li><a href="service.html" class="navSection navActive" onclick="return clickableNavBar(2)">Service</a></li>
+                        <li>
+                            <a href="product-film-rolls.html" class="navSection" onclick="return clickableNavBar(3)">Product                           
+                                 <img class="drop-down-icon" src="https://image.flaticon.com/icons/svg/60/60995.svg" alt="drop-down-icon"></a>
+                            <ul class="dropdown-hover">
+                                <td><a href="product-film-rolls.html" class="dropdown-item-tittle">Film Rolls</a></td>
+                                <td><a href="product-film-camera.html" class="dropdown-item-tittle">Film Cameras</a></td>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html" class="navSection" onclick="return clickableNavBar(4)">Blog</a></li>
+                        <li><a href="contactUs.html" class="navSection" onclick="return clickableNavBar(5)">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="service-container">
+            <h1 class="service-tittle">Our service</h1>
+            <span class="service-box">
+                <aside class="service-sidebar-box">
+                    <a href="#film-processing" id="sidebar" class="service-sidebar-tittle service-sidebar-tittle-active">Film Proccessing</a><br>
+                    <a href="#film-scanning" id="sidebar" class="service-sidebar-tittle">Film Scanning</a><br>
+                    <a href="#darkroom-processing" id="sidebar" class="service-sidebar-tittle">Darkroom Proccessing</a>
+                </aside>
+            <article class="service-section-box" id="film-processing">
+                <img class="image-frame" src="https://filmfotostore.com/wp-content/uploads/2017/11/FP.jpg" alt="img1">
+                <p class="service-section-tittle">Film Processing</p>
+                <div class="service-section-text">Photographic film is able to record images. In order to make these images visible, the film needs to undergo a number of chemical processes. The result of these processes will either be negatives or slides. This is generally known as developing. Different films need different processes. The process for black and white film is different from that for slide film.</div>
+                <div class="service-section-text">There are different kinds of films. The most common of these is film negative. With negative film, all colors are reversed. This is corrected in an additional step of making a print of each image.                  </div>
+                <div class="service-section-text">So called reversal film, which is used for diapositives, directly produces positive images (which are framed to become a slide).</div>
+                <span class="service-section-text">This whole process is known as <span class="service-section-text-highlight">film processing.</span></span>
+            </article>
+            <article class="service-section-box" id="film-scanning">
+                <img class="image-frame" src="https://miro.medium.com/max/4800/1*3yc3vX9HxIetKamifq080w.jpeg" alt="img2">
+                <p class="service-section-tittle">Film Scanning</p>
+                <div class="service-section-text">A <span class="service-section-text-highlight">film scanner</span> is a device made for scanning photographic film directly into a computer without the use of any intermediate printmaking. It provides several benefits over using a flatbed scanner to scan in a print of any size: the photographer has direct control over cropping and aspect ratio from the original, unmolested image on film; and many film scanners have special software or hardware that removes scratches and film grain and improves color reproduction from film. </div><br>
+                <div class="service-section-text">Film scanners can accept either strips of 35 mm or 120 film, or individual slides. Low-end scanners typically only take 35mm film strips, while medium- and high-end film scanners often have interchangeable film loaders. This allows the one scanning platform to be used for different sizes and packaging. For example, some allow microscope slides to be loaded for scanning, while mechanised slide loaders allow many individual slides to be batch scanned unattended. </div>
+            </article>
+            <article class="service-section-box" id="darkroom-processing">
+                <img class="image-frame" src="http://resourcemagonline.com/wp-content/uploads/2017/11/1.jpg" alt="img3">
+                <p class="service-section-tittle">Darkroom Processing</p>
+                <div class="service-section-text">A <span class="service-section-">darkroom</span>is used to process photographic film, to make prints and to carry out other associated tasks. It is a room that can be made completely dark to allow the processing of the light-sensitive photographic materials, including film and photographic paper. Various equipment is used in the darkroom, including an enlarger, baths containing chemicals, and running water. </div><br>
+                <div class="service-section-text">Darkrooms have been used since the inception of photography in the early 19th century. Darkrooms have many various manifestations, from the elaborate space used by Ansel Adams to a retooled ambulance wagon used by Timothy H. O'Sullivan. From the initial development of the film to the creation of prints, the darkroom process allows complete control over the medium. </div><br>
+                <div class="service-section-text">Due to the popularity of color photography and complexity of processing color film (see C-41 process) and printing color photographs and also to the rise, first of Polaroid technology and later digital photography, darkrooms are decreasing in popularity, though are still commonplace on college campuses, schools and in the studios of many professional photographers.</div><br> 
+                <div class="service-section-text">Other applications of darkrooms include the use in nondestructive testing, such as magnetic particle inspection. </div>
+            </article>
+            </span>
+        </main>
+
+        <!--Contact-->
+    <footer id="contact">
+        <div class="contact-group">
+            <div class="contact-section">
+                <a href="https://www.facebook.com/" class="icon-section"><img class="icon-image" src="https://image.flaticon.com/icons/svg/255/255315.svg" alt="fb-icon"></a>
+                <a href="https://www.instagram.com/" class="icon-section"><img class="icon-image" src="https://image.flaticon.com/icons/svg/408/408707.svg" alt="ig-icon"></a>
+                <a href="https://mail.google.com" class="icon-section"><img class="icon-image" src="https://image.flaticon.com/icons/svg/408/408705.svg" alt="gg-icon"></a>
+                <p class="copy-right">Copyright &copy; <script>document.write(new Date().getFullYear());</script> Coding by Nguyen Huynh Anh Phuong-s3695662-All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>
