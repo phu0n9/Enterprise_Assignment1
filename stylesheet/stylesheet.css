@@ -68,6 +68,7 @@ header{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     z-index: 400;
     margin: 0;
+    height: 10;
 }
 
 header::after{
@@ -79,18 +80,19 @@ header::after{
 .container{
     width: 100%;
     margin: 0 auto;
+    height: auto;
 }
 
 .logo{
-    float: inline-start;
+    float: left;
     margin-left: 10%;
     padding-top: 3px;
     width: 5%;
 }
 
 nav{
-    float: 200px;
-    display: block;
+    display: inline-flex;
+    width: 80%;
 }
 
 nav ul{
@@ -99,7 +101,6 @@ nav ul{
     list-style: none;
     width: 90%;
     margin-left: 10%;
-    height: auto;
 }
 
 nav li{

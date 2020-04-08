@@ -7,7 +7,7 @@
     right: 20px;
     padding-bottom: 5%;
     position: relative;
-    height: 6000px;
+    height: 6100px;
 }
 
 .blog-tittle{
@@ -90,6 +90,7 @@
     text-decoration: none;
     font-weight: bold;
     float: inline-end;
+    line-height: 60px;
 }
 
 .read-more-option:hover{
