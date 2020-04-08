@@ -97,13 +97,16 @@ nav ul{
     margin: 0;
     padding: 0;
     list-style: none;
+    width: 90%;
+    margin-left: 10%;
+    height: auto;
 }
 
 nav li{
     display: inline-block;
-    margin-left: 110px;
-    padding-top: 20px;
+    padding-top: 2%;
     position: relative;
+    margin-left: 8%;
 }
 
 nav a{
@@ -239,15 +242,15 @@ footer{
     }
 
     nav li{
-        margin-left: auto;
+        text-align: center;
+        right: 15%;
+    }
+    nav a{
         text-align: center;
     }
     nav ul li{
         width: 100%;
         height: 20px;
-    }
-    nav ul li:nth-child(2){
-        height: 90px;
     }
     nav ul li:nth-child(3){
         height: 70px;
