@@ -92,7 +92,7 @@ function serviceOnScrolling(){
 
 // Initialize and add the map
 function initMap() {
-// The location of RMIT
+    // The location of RMIT
     var rmit = {lat: 10.72986, lng: 106.69408};
     // The map, centered at RMIT
     var map = new google.maps.Map(document.getElementById('mapholder'), {zoom: 4, center: rmit});
@@ -121,10 +121,12 @@ function validateGender(stringGender){
         if(document.getElementById(stringGender).value == genderOption[0].value){
             document.getElementById("gender").setCustomValidity("Please choose your gender");
             document.getElementById("gender").style.border = "1px solid red";
+            checkPoint = 0;
         }
         else{
             document.getElementById("gender").setCustomValidity("");
             document.getElementById("gender").style.border = "1px solid #ccc";
+            checkPoint = 2;
         }
     }
 }
@@ -132,12 +134,12 @@ function validateGender(stringGender){
 function validateEmail(){
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if(document.getElementById("email").value.match(mailformat)) {
-    document.getElementById("email").setCustomValidity('');
-    checkPoint = 1;
+        document.getElementById("email").setCustomValidity('');
+        checkPoint = 3;
     }
     else{
-    document.getElementById("email").setCustomValidity("You have entered an invalid email address!");
-    checkPoint = 0;
+        document.getElementById("email").setCustomValidity("You have entered an invalid email address!");
+        checkPoint = 0;
     }
  }
 
@@ -145,7 +147,7 @@ function validatePhoneNumber(){
     var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
     if((document.getElementById('phone').value.match(phoneno))){
         document.getElementById("phone").setCustomValidity('');
-        checkPoint = 1;
+        checkPoint = 4;
     }
     else{
         document.getElementById("phone").setCustomValidity("Your phone input is incorrect!");
@@ -159,22 +161,26 @@ function validateTextArea(){
     document.getElementById("counting-text").innerHTML = "only "+ textLeft +" characters left";
     if(text.value == ""){
         text.setCustomValidity("Your question(s) should not be empty.");
-        console.log("false");
         checkPoint = 0;
     }
     else{
         text.setCustomValidity('');
-        console.log("true");
-        checkPoint = 1;
+        checkPoint = 5;
     }
 }
 
 function submitQuestion(){
-    if(checkPoint){
-        alert("Thank you for your question. We will provide the answer(s) through your email soon.");
-        window.location.href = "homepage.html";
-    }
-    else{
-        alert("Your input is wrong. Check again.");
+    switch(checkPoint){
+        case 0:
+            alert("You must enter your name, your gender, your email, your phone number and your question(s). Check again.");
+            break;
+        case 1 && 2 && 3 && 4 && 5:
+            alert("Thank you for your question. We will provide the answer(s) through your email soon.");
+            window.location.href = "homepage.html";
+            console.log("true");
+            break;
+        default:
+            alert("You must enter your name, your gender, your email, your phone number and your question(s). Check again.");
+            break;
     }
 }

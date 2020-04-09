@@ -18,7 +18,7 @@ Based on the knowledge on HTML, CSS, and Javascript, I build a small website tha
   
 ## Features
 
-* **A form to collect input from visitors**: The visitors can submit their questions to it, but birthday and gender is not required.
+* **A form to collect input from visitors**: The visitors can submit their questions to it, but birthday is not required.
 * **Contain organization information**: The visitors can see the information displayed in the website
 * **Responsive website**: The website can be used in mobile phones
 * **Maps**: The visitors can see the maps displayed as the address of the store.
