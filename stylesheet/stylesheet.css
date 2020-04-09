@@ -68,7 +68,6 @@ header{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     z-index: 400;
     margin: 0;
-    height: 10;
 }
 
 header::after{

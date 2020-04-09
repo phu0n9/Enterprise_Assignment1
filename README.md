@@ -40,4 +40,7 @@ There is no bugs.
 
 * Mr Thanh's slides and answers from Email
 
-* The inspired design websites: https://croplab.vn/ and https://llab.vn/ and https://tiki.vn/
+* The inspired design websites: https://croplab.vn/ and https://llab.vn/ and https://tiki.vn/ 
+
+* Using google tutorial to add Google Maps with a marker to My Website: https://developers.google.com/maps/documentation/javascript/adding-a-google-map
+

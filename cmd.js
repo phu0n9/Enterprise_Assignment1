@@ -92,7 +92,7 @@ function serviceOnScrolling(){
 
 // Initialize and add the map
 function initMap() {
-    // The location of RMIT
+// The location of RMIT
     var rmit = {lat: 10.72986, lng: 106.69408};
     // The map, centered at RMIT
     var map = new google.maps.Map(document.getElementById('mapholder'), {zoom: 4, center: rmit});
