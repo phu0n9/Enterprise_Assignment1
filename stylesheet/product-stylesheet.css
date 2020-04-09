@@ -4,13 +4,13 @@ body{
 
 /*product items*/
 .product-container{
-    width: 1350px;
+    width: 1250px;
     height: 1400px;
     margin: 0 auto;
     position: relative;
     left: 5px;
     padding-top: 7%;
-    background-color: rgb(243, 241, 241);
+    /* background-color: rgb(243, 241, 241); */
 }
 
 .product-box{
@@ -34,7 +34,7 @@ body{
     width: 65%;
     height: 100%;
     display: grid;
-    grid-template-columns: 270px 270px 270px;
+    grid-template-columns: 250px 250px 250px;
     background-color: white;
     padding: 0.1px;
     grid-column-gap: 5px; 
