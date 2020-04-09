@@ -202,7 +202,9 @@ textarea:invalid{
     .form-box-tittle{
         font-size: 25px;
     }
-    
-
+    .count-letters{
+        margin-right: 0;
+        margin-bottom: 3%;
+    }
 }
 
