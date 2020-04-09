@@ -243,10 +243,13 @@ footer{
 
     nav li{
         text-align: center;
-        right: 15%;
+        padding-right: 5%;
     }
     nav a{
         text-align: center;
+    }
+    nav a:hover::before{
+        width: 0;
     }
     nav ul li{
         width: 100%;
@@ -257,7 +260,7 @@ footer{
     }
     nav li{
         float: none;
-        display: block;
+        display: inline-block;
     }
     nav ul li ul{
         float: none;
