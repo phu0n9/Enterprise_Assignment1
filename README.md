@@ -10,6 +10,8 @@ Assessment: Assignment 1 -Front-end Website Development</br>
 
 Name: Nguyen Huynh Anh Phuong (s3695662)
 
+Access link: https://phu0n9.github.io/Enterprise_Assignment1/homepage.html
+
 
 ## Introduction
 
